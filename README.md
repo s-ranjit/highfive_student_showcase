@@ -18,11 +18,11 @@ Open the index file in your browser of choice.
 Intial commit on September 15, 2025
 
 # Credits
-Rin Morito
-Situ Ranjit
-Linh Nguyen
-Hannah Silva
-Kingsley Watson
+- Rin Morito
+- Situ Ranjit
+- Linh Nguyen
+- Hannah Silva
+- Kingsley Watson
 
 # License
 MIT License 

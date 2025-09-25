@@ -127,6 +127,85 @@ hero
   margin-top: 150px;
 }
 
+/*----------------
+invitation card
+-------------------*/
+.envelope {
+  background: url(../images/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  padding: 100px 50px 40px 50px;
+  color: #fff; 
+  margin-top: 100px;     
+}    
+
+.text {
+      margin-top: 50px;
+}
+
+.envelope h3 {
+  margin: 10px auto;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 30px;
+}
+
+.date h3 {
+  margin: 0;
+}
+
+.date span {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 5px 20px 15px 20px;
+}
+
+.line {
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        padding: 0px 20px;
+}
+
+.location p:first-child {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.location p:last-child {
+  margin: 5px auto;
+  padding: 0 60px;
+}
+
+.countdown h3 {
+  margin-top: 30px;
+}
+
+.countdown p:last-child {
+  margin-top: 10px;
+}
+
+#countdown-time {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+#countdown-time p {
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
 
 
 
@@ -176,6 +255,50 @@ header navigation
     white-space: nowrap;
 }
 
+/*_--------------
+invitation card
+--------------------*/
+
+
+.envelope {
+    background: url(../images/envelopedesk.svg) no-repeat;
+    padding: 120px 90px 40px;
+    background-position: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .text {
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+  }
+       
+  .date {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .date span {
+    margin: 10px;
+  }
+
+  .location {
+    font-size: 18px;
+    margin: 40px;
+    line-height: 2.0;
+  }
+
+    .countdown {
+    margin: 20px 0;
+  }
+
+
+#countdown-time {
+  margin: 0 150px;
+  border-bottom: 1px solid white;
+}
     
 }
 
@@ -193,4 +316,44 @@ header navigation
         gap: 50px;
     }
 
+    /*-------------
+    invitation card
+    -------------------*/
+
+    .envelope {
+    background: url(../images/envelopedesk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 180px 90px 40px 90px;
+    background-size: contain;
+  }
+  
+  .envelope h3 {
+    font-size: 34px;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+      
+  .date {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  .date span {
+    margin: 10px;
+  }
+
+  .location {
+    font-size: 20px;
+    margin: 40px;
+    line-height: 2.0;
+  }
+
+  .countdown {
+    font-size: 26px;
+    margin: 20px 0;
+  }
 }

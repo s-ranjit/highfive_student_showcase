@@ -15,7 +15,6 @@
 
  html {
     box-sizing: border-box; 
-    font-family: Arial, Helvetica, sans-serif;
   }
   
   *, *::before, *::after {
@@ -26,11 +25,11 @@
    .grid-con { 
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-column-gap: 30px;
+    grid-column-gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   /* 2. ---Mobile Library Grid Styles--- */
@@ -55,11 +54,11 @@
     .grid-con { 
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-column-gap: 15px;
+      grid-column-gap: 20px;
       max-width: 1500px;
       margin: 0 auto;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   
   .m-col-spa .m-col-span-1	{grid-column: span 1 / span 1;}
@@ -113,11 +112,11 @@
     .grid-con { 
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-column-gap: 30px;
+      grid-column-gap: 20px;
       max-width: 1500px;
       margin: 0 auto;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   
   .l-col-span-1	{grid-column: span 1 / span 1;}

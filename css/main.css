@@ -131,7 +131,7 @@ hero
 invitation card
 -------------------*/
 .envelope {
-  background: url(../images/envelope.svg);
+  background: url(../images/envelope-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -261,7 +261,7 @@ invitation card
 
 
 .envelope {
-    background: url(../images/envelopedesk.svg) no-repeat;
+    background: url(../images/envelope-tablet.svg) no-repeat;
     padding: 120px 90px 40px;
     background-position: center;
     text-align: center;
@@ -321,7 +321,7 @@ header navigation
     -------------------*/
 
     .envelope {
-    background: url(../images/envelopedesk.svg);
+    background: url(../images/envelope-desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 180px 90px 40px 90px;

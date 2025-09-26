@@ -135,6 +135,34 @@
                 the next generation of professionals. Your presence, encouragement, and feedback will play a vital role
                 in supporting their growth and future success.</p>
         </article>
+
+        <div class="grid-con">
+            <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+                <h2 class="hidden">video</h2>
+                <video controls preload="metadata" poster="images/placeholder.png">
+                    <source src="video/intro.mp4" type="video/mp4">
+                    <source src="video/intro.webm" type="video/webm">
+                    <p>Your browser does not support the video tag.
+                    </p>
+                </video>
+                <div class="video-controls" id="video-controls">
+                    <button id="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                    <button id="stop-button">
+                        <i class="fa-solid fa-stop"></i>
+                    </button>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                    <button id="full-screen">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="js/main.js"></script>

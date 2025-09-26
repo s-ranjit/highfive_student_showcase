@@ -385,6 +385,41 @@ input[type="range"]:focus::-moz-range-thumb{
   outline-offset: 0.125rem;
 }
 
+/*---------------------
+ Project section
+---------  */
+#project-section {
+  margin-top: 50px;
+}
+
+.event-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.icon i {
+    font-size: 30px; 
+    color: #B3272D;
+    margin-right: 10px;
+}
+
+.icon {
+  margin: 20px 0;
+}
+
+.icon i.fa-lightbulb {
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+.text-box {
+  font-size: 14px;
+  padding: 20px;
+}
+
 /* ------------------
 Introduction of IDP3 
 ----------------------*/
@@ -763,6 +798,14 @@ Event details Tablet version
     line-height: 1.2;
   } 
 
+  /*------------------
+   Project section Tablet Version 
+   ------------------------*/
+  .text-box {
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 40px; 
+  }
 
       /* ------------------
 Introduction of IDP3 

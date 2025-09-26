@@ -518,6 +518,127 @@ input[type="range"]:focus::-moz-range-thumb{
   transform: scale(1.05);     
 }
 
+/* -------------------
+Circle Teacher Animation
+------------------------*/
+/* Circle + dots */
+.teachers-section {
+  place-items: center;
+  gap: 60px;
+}
+
+.teachers-section h3 {
+  color: #b71c1c;
+  margin-left: 40px;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-left: 40px; 
+}
+
+.circle-path {
+  width: 100%;
+  height: 100%;
+  border: 20px solid #d32f2f;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* image inside the circle */
+.circle-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+  align-items: center;
+}
+
+.circle-inner.show {
+  opacity: 1;
+}
+
+/* Dot inside border */
+.dot {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-190px); /* luôn ở 12h khi load */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 2;
+}
+
+.dot.hidden { opacity: 0; }
+
+.logo-line {
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.fanshawe_logo_red {
+  width: 80px;
+  height: auto;
+}
+
+hr.separator {
+  border: none;
+  border-top: 4px solid #B3272D;
+  width: 100%;
+  padding-right: 320px;
+  margin-top: 38px;
+}
+
+
+
+/* Text */
+.teacher-info {
+  max-width: 420px;
+  min-height: 160px;
+  margin-top:-60px;
+  margin-left: 35px;
+}
+
+.teacher-info .info {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  display: none;
+}
+
+.teacher-info .info.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.teacher-info h3 {
+  color: #d32f2f;
+  margin-bottom: 14px;
+  font-size: 30px;
+}
+
+.teacher-info p {
+  color: #444;
+  font-style: italic;
+  line-height: 1.6;
+}
+
 
 /* ------------------
 Introduction of IDP3 

@@ -163,8 +163,10 @@ font-size: 18px;
 gap: 30px;
 }
 
-.date h3 {
-margin: 0;
+.date p.bold-20 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .date span {
@@ -194,6 +196,12 @@ padding: 0 60px;
 margin-top: 30px;
 }
 
+.countdown p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
 .countdown p:last-child {
 margin-top: 10px;
 }
@@ -215,60 +223,64 @@ margin: 0 0 10px 0;
 
 
 /*-----------------
-Event Details section 
------------------------ */
+ Event Details section 
+ ----------------------- */
 #event-itinerary {
-  margin: 150px auto;
+    margin: 150px auto;
 }
 
 .eventimg {
-background-color: #B3272D;
-height: 200px;
-color: #fff;
-display: flex;
-align-items: center;
-justify-content: center;
+  background-color: #B3272D;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
-font-size: 24px;
-color: #B3272D;
-margin-top: 10px;
+  font-size: 24px;
+  color: #B3272D;
+  margin-top: 10px;
 }
 
 .event{
-color: #B3272D;
-font-size: 28px;
-font-weight: 700;
+  color: #B3272D;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .section-brk-line {
-border-top: 1px solid #ccc;
-padding: 10px 0;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
 }
 
 .time {
-color: #B3272D;
-display: flex;
-align-items: center;
-gap: 10px;
+  color: #B3272D;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.time h4 {
+p.time-schedule {
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
 .event-highlights {
-color: #B3272D;
-margin: 15px 0;
+  color: #B3272D;
+  margin: 15px 0;
+  text-transform: uppercase;
 }
 
 p.event-location {
-margin: 0;
+  margin: 0;
 }
 
 .event-description {
-margin-top: 4px;
+  margin-top: 4px;
 }
 
 /*------------------
@@ -284,6 +296,10 @@ Invitation section
     margin-top: 50px;
 }
 
+p.second-heading {
+  font-size: 20px;
+  font-weight: bold;
+ }
   
 .invite p {
     margin-bottom: 70px;
@@ -655,9 +671,10 @@ Introduction of IDP3
 }
 
 .program-slideshow-container {
-  width: max-content;
+  width: 100%;
   overflow: hidden;
   padding: 50px 0;
+  position: relative;
 }
 
 #top-program-slideshow {
@@ -679,6 +696,7 @@ Introduction of IDP3
   width: 200px;
   background-color: white;
   border: 2px solid #646469;
+  flex-shrink: 0;
 }
 
 .top-slideshow-img {
@@ -696,15 +714,19 @@ Introduction of IDP3
 
 @keyframes bottomSlideshow {
   from {
-      transform: translateX(-1000px);
+      transform: translateX(0);
   }
   to {
-      transform: translateX(0px);
+      transform: translateX(1100px);
   }
 }
 #about-idp3 {
   text-align: center;
   padding: 40px;
+}
+
+#about-idp3 h3 {
+  text-transform: uppercase;
 }
 
 #about-idp3 p {
@@ -719,12 +741,15 @@ Introduction of IDP3
   padding: 10px 20px;
   width: 200px;
   margin: 10px auto;
+  transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
 }
 
 #about-idp3 a:hover {
   color: white;
   background-color: #B3272D;
-  box-shadow: 3px 3px 3px #646469;
+  border: 2px solid white;
+  transform: scale(1.05); 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
 }
 
 /* ---------------

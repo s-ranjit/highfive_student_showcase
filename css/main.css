@@ -430,9 +430,10 @@ Introduction of IDP3
 }
 
 .program-slideshow-container {
-    width: max-content;
+    width: 100%;
     overflow: hidden;
     padding: 50px 0;
+    position: relative;
 }
 
 #top-program-slideshow {
@@ -454,6 +455,7 @@ Introduction of IDP3
     width: 200px;
     background-color: white;
     border: 2px solid #646469;
+    flex-shrink: 0;
 }
 
 .top-slideshow-img {
@@ -471,10 +473,10 @@ Introduction of IDP3
 
 @keyframes bottomSlideshow {
     from {
-        transform: translateX(-1000px);
+        transform: translateX(0px);
     }
     to {
-        transform: translateX(0px);
+        transform: translateX(1100px);
     }
 }
 #about-idp3 {
@@ -500,6 +502,7 @@ Introduction of IDP3
     color: white;
     background-color: #B3272D;
     box-shadow: 3px 3px 3px #646469;
+    border: 2px solid white;
 }
 
 /* ---------------

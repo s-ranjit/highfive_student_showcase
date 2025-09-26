@@ -1,3 +1,14 @@
+/*scroll animation*/
+const hero = document.querySelector('#hero img');
+
+window.addEventListener("scroll",() => {
+  let scrollY = window.scrollY;
+  let scale = Math.max(0.2, 1 - scrollY / 300);
+
+  hero.style.transform = `scale(${scale})`;
+});
+
+/*vedio*/
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
 const videoControls = document.querySelector("#video-controls");

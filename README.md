@@ -2,6 +2,7 @@
 
 **Course:** MMED 3038, MMED 3039, MMED 3040, MMED 1058. 
 **Instructor:** Marco de Luca, Justin Brunner, Jarrod Osterback, Joe Kormendi 
+
 **Due Dates:** 
 - Week 4: 5% – Group Grade (Individual class grade) 
 - Week 6: 15% – Group Grade 

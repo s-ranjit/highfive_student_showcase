@@ -264,6 +264,22 @@ p.event-location {
   margin-top: 4px;
 }
 
+/*------------------
+ Invitation section
+ ----------------------- */
+.invite {
+      background-color: #B3272D;
+      color: white;
+      text-align: center;
+}
+
+.invite-heading {
+      margin-top: 50px;
+ }
+    
+.invite p {
+      margin-bottom: 70px;
+}
 
 /*---------------------------
 tablet style
@@ -392,6 +408,27 @@ Event details Tablet version
   .event-location {
    font-size: 18px;
   }
+
+  /*----------------------
+  Invitation section Tablet Version 
+  --------------------------------*/
+  .invite {
+    background-color: #B3272D;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .heading {
+    margin-top: 50px;
+    font-size: 23px;
+  }
+
+  .invite p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+  } 
 }
 
 /*---------------

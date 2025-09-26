@@ -211,7 +211,7 @@ invitation card
  Event Details section 
  ----------------------- */
 #event-itinerary {
-    margin: 150px auto;
+    margin: 65px auto;
 }
 
 .eventimg {
@@ -359,6 +359,9 @@ invitation card
 /* ------------------
 Event details Tablet version 
 ---------------------------*/
+#event-itinerary {
+    margin: 90px auto;
+}
  .event-itinerary {
     margin-top: 170px;
   }
@@ -445,4 +448,11 @@ header navigation
     font-size: 26px;
     margin: 20px 0;
   }
+
+  /* ------------------
+  Event details Tablet version 
+  ---------------------------*/
+  #event-itinerary {
+    margin: 105px auto;
+}
 }

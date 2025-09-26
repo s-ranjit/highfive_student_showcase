@@ -467,6 +467,152 @@ Introduction of IDP3
     box-shadow: 3px 3px 3px #646469;
 }
 
+/* ---------------
+highfive portfolio showcase 
+-----------------------------*/
+#highfive-portfolio h3 {
+    color: #B3272D;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#highfive-portfolio p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.highfive-portfolio-box {
+    display: flex;
+    position: relative;
+    gap: 0;
+}
+
+.highfive-portfolio-card {
+    position: relative;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+}
+
+
+.highfive-portfolio-img {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 2px solid #646469;
+    position: absolute;
+    top: -55px;
+    left: 35px;
+    z-index: 99;
+}
+
+.highfive-portfolio-info {
+    background-color: #B3272D;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.highfive-portfolio-info h4 {
+    padding-top: 140px;
+    margin: 0;
+}
+
+.highfive-portfolio-info p {
+    margin-top: 3px;
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.highfive-portfolio-info p.quato {
+    font-style: italic;
+    padding: 0 20px;
+}
+
+.fanshawe-medal {
+    position: absolute;
+    z-index: 999;
+    top: -70px;
+    left: 10px;
+}
+
+.fanshawe-medal img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+/* -------------------
+student portfolio showcase 
+---------------------------*/
+#student-portfolio {
+    margin-bottom: 150px;
+}
+
+#student-portfolio h3 {
+    color: #B3272D;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#student-portfolio p.center {
+    margin-top: 0;
+    text-align: center;
+}
+
+.student-portfolio-box {
+    position: relative;
+    display: flex;
+    gap: 0;
+}
+
+.student-portfolio-card {
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.student-portfolio-img {
+    width: 90px;
+    height: 90px;
+    background-color: #646469;
+    position: absolute;
+    top: 13px;
+    left: 40px;
+    z-index: 100;
+}
+
+.student-portfolio-info {
+    border: 2px solid #646469;
+    padding: 15px 20px 10px 60px;
+    margin-left: 90px;
+    width: 300px;
+    position: relative;
+}
+
+.student-portfolio-box p.student-name {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.student-portfolio-box p {
+    margin-top: 3px;
+    font-size: 0.7em;
+}
+
+.student-portfolio-box p.quato {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
 
 /*---------------------------
 tablet style
@@ -626,6 +772,34 @@ Introduction of IDP3
     height: 200px;
     width: 250px;
     }
+
+    /* ---------------
+highfive portfolio showcase 
+-----------------------------*/
+
+.highfive-portfolio-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+/* -------------------
+student portfolio showcase 
+---------------------------*/
+
+.student-portfolio-card {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+    gap: 30px;
+}
+
+.student-portfolio-info {
+    margin-left: 70px;
+}
+
+.student-portfolio-img {
+    left: 6%;
+}
 }
 
 /*---------------
@@ -708,5 +882,25 @@ header navigation
 
   #full-screen {
    margin-left: 300px;
+}
+
+/* ---------------
+highfive portfolio showcase 
+-----------------------------*/
+
+    .highfive-portfolio-card {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+/* -------------------
+student portfolio showcase 
+---------------------------*/
+
+.student-portfolio-card {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+    gap: 20px;
 }
 }

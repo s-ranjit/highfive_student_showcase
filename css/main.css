@@ -207,6 +207,62 @@ invitation card
 }
 
 
+/*-----------------
+ Event Details section 
+ ----------------------- */
+#event-itinerary {
+    margin: 150px auto;
+}
+
+.eventimg {
+  background-color: #B3272D;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 24px;
+  color: #B3272D;
+  margin-top: 10px;
+}
+
+.event{
+  color: #B3272D;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.section-brk-line {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.time {
+  color: #B3272D;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.time h2 {
+  font-size: 20px;
+  margin-top: 26px;
+}
+
+.event-highlights {
+  color: #B3272D;
+  margin: 15px 0;
+}
+
+p.event-location {
+  margin: 0;
+}
+
+.event-description {
+  margin-top: 4px;
+}
 
 
 /*---------------------------
@@ -299,7 +355,40 @@ invitation card
   margin: 0 150px;
   border-bottom: 1px solid white;
 }
-    
+
+/* ------------------
+Event details Tablet version 
+---------------------------*/
+ .event-itinerary {
+    margin-top: 170px;
+  }
+  .event{
+    color: #B3272D;
+    font-size: 30px;
+    font-weight: 720;
+}
+
+  .event-description {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+  .eventimg {
+    margin-top: 18px;
+    height: 240px;
+  }
+
+  .margin {
+    margin-top: 60px;
+  }
+
+  .time {
+    font-size: 18px;
+  }
+
+  .event-location {
+   font-size: 18px;
+  }
 }
 
 /*---------------

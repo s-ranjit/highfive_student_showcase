@@ -1046,7 +1046,7 @@ header navigation
       position: relative;
       opacity: 1;
       transition: none;
-            transform: none;
+      transform: none;
   }
 
   #header-nav-close {
@@ -1074,6 +1074,7 @@ header navigation
   font-weight: bold;
   color: white;
   white-space: nowrap;
+  transition: none;
 }
 
 /*_--------------

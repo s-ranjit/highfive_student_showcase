@@ -77,8 +77,8 @@ This is a collaborative project across multiple courses (Multimedia Authoring, W
 |-----------------------------------|-----------------|---------------------------------------------------------------------------------|
 | Rin Morito, Linh Nguyen, Situ Ranjit | 💻 Developer     | HTML structure, JavaScript logic (menu, arrays, testimonials, portfolios), GitHub workflow & README |
 | Rin Morito, Linh Nguyen, Situ Ranjit | 🎨 Designer      | Wireframing on Figma, CSS styling, Grid/Flex layouts, UI/UX design, branding assets |
-| Linh Nguyen, Hannah Melo, Kingsley Watson | 📝 Content Lead | Event information, program overview, testimonials content, copywriting |
-| Hannah Melo, Kingsley Watson       | 🎬 Media Manager | Video production/editing, image optimization, motion graphics, 3D assets (C4D, AE, PR) |
+| Linh Nguyen, Hannah Silva, Kingsley Watson | 📝 Content Lead | Event information, program overview, testimonials content, copywriting |
+| Hannah Silva, Kingsley Watson       | 🎬 Media Manager | Video production/editing, image optimization, motion graphics, 3D assets (C4D, AE, PR) |
 
 ---
 

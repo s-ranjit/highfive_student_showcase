@@ -1378,8 +1378,22 @@ header navigation
   line-height: 1.2;
 }
 
-.slider-heading { margin-bottom: -110px; }
-.group-caption  { margin-top: -110px; }
+ #play-button,
+#pause-button,
+#stop-button, #change-vol, #full-screen, .fa-volume-up {
+  font-size: 25px;
+  color: #ffffff;
+  margin-left: 40px;
+}
+.fa-volume-high {
+    margin-left: 180px;
+    color: #fff;
+    font-size: 25px;
+}
+
+#full-screen {
+  margin-left: 300px;
+}
 
 
       /* ------------------

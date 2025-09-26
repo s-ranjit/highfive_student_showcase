@@ -384,6 +384,90 @@ input[type="range"]:focus::-moz-range-thumb{
   outline: 3px solid #d2464d;
   outline-offset: 0.125rem;
 }
+
+/* ------------------
+Introduction of IDP3 
+----------------------*/
+#program {
+    margin: 150px auto;
+    background-color: #B3272D;
+    color: white;
+}
+
+.program-slideshow-container {
+    width: max-content;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+#top-program-slideshow {
+    display: flex;
+    gap: 20px;
+    animation: topSlideshow 30s linear infinite;
+}
+
+#bottom-program-slideshow {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: end;
+    animation: bottomSlideshow 30s linear infinite;
+}
+
+.top-slideshow-img, .bottom-slideshow-img {
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid #646469;
+}
+
+.top-slideshow-img {
+    color: black;
+}
+
+@keyframes topSlideshow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-1100px);
+    }
+}
+
+@keyframes bottomSlideshow {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+#about-idp3 {
+    text-align: center;
+    padding: 40px;
+}
+
+#about-idp3 p {
+    margin: 20px auto;
+}
+
+#about-idp3 a {
+    color: #B3272D;
+    background-color: white;
+    border: 2px solid #646469;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+#about-idp3 a:hover {
+    color: white;
+    background-color: #B3272D;
+    box-shadow: 3px 3px 3px #646469;
+}
+
+
 /*---------------------------
 tablet style
 ---------------------------------*/
@@ -532,6 +616,16 @@ Event details Tablet version
     margin-bottom: 50px;
     line-height: 1.2;
   } 
+
+
+      /* ------------------
+Introduction of IDP3 
+----------------------*/
+
+    .top-slideshow-img, .bottom-slideshow-img {
+    height: 200px;
+    width: 250px;
+    }
 }
 
 /*---------------

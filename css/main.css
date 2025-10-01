@@ -616,7 +616,7 @@ transform: scale(1.05);
   opacity: 0;
 }
 
-/* Ảnh luân phiên */
+/* Animation */
 .slide1 { animation: fadeSlide 32s ease-in-out infinite; animation-delay: 0s; }
 .slide2 { animation: fadeSlide 32s ease-in-out infinite; animation-delay: 8s; }
 .slide3 { animation: fadeSlide 32s ease-in-out infinite; animation-delay: 16s; }

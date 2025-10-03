@@ -1,5 +1,5 @@
 /*scroll animation*/
-const hero = document.querySelector('#hero img');
+const hero = document.querySelector('#hero-container');
 
 window.addEventListener("scroll",() => {
   let scrollY = window.scrollY;
@@ -7,6 +7,25 @@ window.addEventListener("scroll",() => {
 
   hero.style.transform = `scale(${scale})`;
 });
+
+/* hero section slideshow */
+const heroSlides = document.querySelectorAll(".hero-slide");
+let slideIndex = 0;
+
+function heroSlideshow () {
+  let i;
+  for (i = 0; i < heroSlides.length; i++) {
+    heroSlides[i].style.display = "none";
+  }
+  slideIndex ++;
+  if (slideIndex > heroSlides.length - 1) {
+    slideIndex = 0;
+  }
+  heroSlides[slideIndex].style.display = "block";
+  setTimeout(heroSlideshow, 3000);
+}
+
+heroSlideshow();
 
 /*video*/
 const playerCon = document.querySelector("#player-container");

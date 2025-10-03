@@ -133,6 +133,29 @@ hero
 margin-top: 150px;
 }
 
+#hero-container {
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-letter {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: .4;}
+  to { opacity: 1;}
+}
 
 /*----------------
 invitation card
@@ -145,7 +168,6 @@ text-align: center;
 position: relative;
 padding: 100px 50px 40px 50px;
 color: #fff; 
-margin-top: 100px;     
 }    
 
 .text {
@@ -1127,6 +1149,13 @@ header navigation
   transition: none;
 }
 
+/* ----------------
+hero
+-----------------*/
+#hero-container {
+  height: 550px;
+}
+
 /*_--------------
 invitation card
 --------------------*/
@@ -1345,6 +1374,13 @@ header navigation
       margin-left: 30px;
       gap: 50px;
   }
+
+    /* ----------------
+hero
+-----------------*/
+#hero-container {
+  height: 650px;
+}
 
   /*-------------
   invitation card

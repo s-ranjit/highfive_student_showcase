@@ -31,10 +31,10 @@
                 <label for="hamburger" id="header-nav-close">X</label>
                 <nav>
                     <ul>
-                        <li><a href="#">EVENT</a></li>
-                        <li><a href="#">PROJECT EXHIBIT</a></li>
-                        <li><a href="#">PROGRAM</a></li>
-                        <li><a href="#">PORTFOLIOS</a></li>
+                        <li><a href="#event-itinerary">EVENT</a></li>
+                        <li><a href="#project-exhibition">PROJECT EXHIBIT</a></li>
+                        <li><a href="#program">PROGRAM</a></li>
+                        <li><a href="#highfive-showcase">PORTFOLIOS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,10 +42,68 @@
     </header>
 
     <main>
-        <section id="hero" class="grid-con">
+       <section id="hero" class="grid-con">
             <h2 class="hidden">hero</h2>
-            <img src="images/hero.svg" alt="hero image with IDP3 letters"
-                class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">
+            <div id="hero-container" class="col-span-full m-col-start-2 m-col-end-11 l-col-start-2 l-col-end-11">
+
+                <div id="hero-img-slideshow">
+                    <div class="hero-slide fade">
+                        <img src="images/mob-hero1.jpg"
+                        srcset="images/tab-hero1.jpg 768w,
+                        images/desk-hero1.jpg 1200w"
+                        sizes="100vw"
+                        alt="hero image 1">
+                    </div>
+
+                    <div class="hero-slide fade">
+                        <img src="images/mob-hero2.jpg"
+                        srcset="images/tab-hero2.jpg 768w,
+                        images/desk-hero2.jpg 1200w"
+                        sizes="100vw"
+                        alt="hero image 2">
+                    </div>
+
+                    <div class="hero-slide fade">
+                        <img src="images/mob-hero3.jpg"
+                        srcset="images/tab-hero3.jpg 768w,
+                        images/desk-hero3.jpg 1200w"
+                        sizes="100vw"
+                        alt="hero image 3">
+                    </div>
+
+                    <div class="hero-slide fade">
+                        <img src="images/mob-hero4.jpg"
+                        srcset="images/tab-hero4.jpg 768w,
+                        images/desk-hero4.jpg 1200w"
+                        sizes="100vw"
+                        alt="hero image 4">
+                    </div>
+
+                    <div class="hero-slide fade">
+                        <img src="images/mob-hero5.jpg"
+                        srcset="images/tab-hero5.jpg 768w,
+                        images/desk-hero5.jpg 1200w"
+                        sizes="100vw"
+                        alt="hero image 5">
+                    </div>
+
+                    <div class="hero-slide fade">
+                        <img src="images/mob-hero6.jpg"
+                        srcset="images/tab-hero6.jpg 768w,
+                        images/desk-hero6.jpg 1200w"
+                        sizes="100vw"
+                        alt="hero image 6">
+                    </div>
+                </div>
+
+                <div id="hero-letter" class="m-col-start-5 m-col-end-13 l-col-start-7 l-col-end-13">
+                    <img src="images/mob-hero-letter.png"
+                        srcset="images/tab-hero-letter.png 768w,
+                        images/desk-hero-letter.png 1200w"
+                        sizes="100vw"
+                        alt="masked letter for hero">
+                </div>
+            </div>
         </section>
 
         <section class="invitation-card grid-con">
@@ -206,7 +264,7 @@
             </div>
         </section>
 
-        <section class="grid-con">
+        <section class="grid-con"  id="project-exhibition">
             <h2 class="hidden">Project Exhibition</h2>
 
     <div class="slider-heading col-span-4 m-col-span-12 l-col-span-12">

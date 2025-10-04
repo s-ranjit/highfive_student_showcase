@@ -347,6 +347,7 @@ Invitation section
       animation-delay: 0.2s;
       animation-timeline: view();     /* animation occurs when you scroll this section */
       animation-range: entry 0% cover 50%;
+      opacity: 0;
 }
 
 @keyframes slideFromLeft {

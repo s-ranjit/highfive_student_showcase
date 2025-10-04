@@ -249,7 +249,19 @@ margin: 0 0 10px 0;
  Event Details section 
  ----------------------- */
 #event-itinerary {
-    margin: 150px auto;
+    margin: 65px auto;
+    transform: translateY(600px);
+    animation: fadeUp 2s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .eventimg {
@@ -295,7 +307,24 @@ margin: 0 0 10px 0;
 .event-highlights {
   color: #B3272D;
   margin: 15px 0;
-  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.event-highlights::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #B3272D;
+  transition: width 0.4s ease;
+}
+
+.event-highlights:hover::after {
+  width: 100%;
 }
 
 p.event-location {

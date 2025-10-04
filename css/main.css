@@ -286,6 +286,10 @@ margin: 0 0 10px 0;
   text-transform: uppercase;
 }
 
+.event span {
+  color: #646469;
+}
+
 .section-brk-line {
   border-top: 1px solid #ccc;
   padding: 10px 0;

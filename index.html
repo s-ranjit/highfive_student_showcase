@@ -7,15 +7,21 @@
     <title>Industry Night 2026</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
     <h1 class="hidden">Welcome to Industry Night 2026 Website</h1>
     <header class="full-width-grid-con">
+        <h2 class="hidden">Header Navigation</h2>
         <div class="grid-con">
-            <a href="https://www.fanshawec.ca" id="header-logo" class="col-start-1">
+            <a href="index.html" id="header-logo" class="col-start-1">
                 <img src="images/fanshawe_logo_white.svg" alt="fanshawe logo">
             </a>
 
@@ -28,10 +34,10 @@
                 <label for="hamburger" id="header-nav-close">X</label>
                 <nav>
                     <ul>
-                        <li><a href="#">EVENT</a></li>
-                        <li><a href="#">PROJECT EXHIBIT</a></li>
-                        <li><a href="#">PROGRAM</a></li>
-                        <li><a href="#">PORTFOLIOS</a></li>
+                        <li><a href="#event-itinerary">EVENT</a></li>
+                        <li><a href="#project-exhibition">PROJECT EXHIBIT</a></li>
+                        <li><a href="#program">PROGRAM</a></li>
+                        <li><a href="#highfive-showcase">PORTFOLIOS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,27 +46,74 @@
 
     <main>
         <section id="hero" class="grid-con">
-            <h2 class="hidden">hero image</h2>
-            <img src="images/hero.svg" alt="hero image with IDP3 letters"
-                class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">
+            <h2 class="hidden">hero section</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <div id="hero-title" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <p>talent showcase</p>
+                <h3>Industry night</h3>
+                <h3>2026</h3>
+            </div>
+
+            <p id="title-date" class="col-span-2 m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">April 23rd 2026</p>
+
+                <div id="mob-hero-img" class="col-span-full">
+                    <img src="images/mob-hero.webp" alt="hero image of mobile">
+                </div>
+
+                <div id="countdown" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <div class="countdown-time">
+                    <h3 id="days"></h3>
+                    <small>Day</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="hours"></h3>
+                    <small>Hours</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="minutes"></h3>
+                    <small>Minutes</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="seconds"></h3>
+                    <small>Seconds</small>
+                </div>
+               </div>
+
+               <div id="title-btn" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+               <a herf="#event-itinerary" id="title-schedule-btn">Schedule</a>
+               <a herf="#envelope" id="title-learnmore-btn">Learn more</a>
+               </div>
+
+               </div>
+
+               <div id="tab-desk-hero-img" class="m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
+                    <img src="images/tab-hero.webp"
+                    srcset="images/tab-hero.webp 768w,
+                    images/desk-hero.webp 1200w"
+                    alt="industry night hero">
+                </div>
+
         </section>
 
         <section class="invitation-card grid-con">
-            <h2 class="hidden">Invitation Card section</h2>
+            <h2 class="hidden">Invitation Card</h2>
             <div class="envelope col-span-full m-col-span-full l-col-span-full">
                 <div class="text"> WELCOME TO OUR</div>
                 <h3>Industry Night 2026</h3>
                 <div class="date">
-                    <h4>April</h4>
-                    <h3 class="line"><span>THU</span><br>23</h3>
-                    <h4>2026</h4>
+                    <p class="bold-20">April</p>
+                    <p class="line"><span>THU</span><br>23</p>
+                    <p class="bold-20">2026</p>
                 </div>
                 <div class="location">
                     <p>THE GOOD FOUNDATION INC. THEATHER</p>
                     <p>137 Dundas St, Fanshawe LDA Building, London, ON N6A 1E9</p>
                 </div>
                 <div class="countdown">
-                    <h3>217 : 09 : 58 : 34</h3>
+                    <p>217 : 09 : 58 : 34</p>
                     <div id="countdown-time" class="col-span-full">
                         <p>Days</p>
                         <p>Hours</p>
@@ -75,7 +128,10 @@
         <section id="event-itinerary" class="grid-con">
             <h2 class="hidden">Event Itinerary section</h2>
             <div class="col-span-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
-                <h3 class="event"><span>EVENT</span> <br>ITINERARY</h3>
+                <h3 class="event">
+                    <span class="event-heading">Event</span><br>
+                    <span class="itinerary">Itinerary</span>
+                </h3>
                 <div class="eventimg">image</div>
             </div>
 
@@ -83,9 +139,9 @@
                 <article>
                     <div class="time margin">
                         <i class="fa-solid fa-clock icon"></i>
-                        <h2>4:30PM - 6:00PM</h2>
+                        <p class="time-schedule">4:30PM - 6:00PM</p>
                     </div>
-                    <h3 class="event-highlights">SPOTLIGHT <br> PRESENTATIONS</h3>
+                    <h4 class="event-highlights">Spotlight<br>Presentations</h4>
                     <p class="event-location">at The Good Foundation Inc. Theatre</p>
                     <p class="event-description">
                         Get inspired by featured projects and student collaborators as they share
@@ -97,9 +153,9 @@
                 <article class="section-brk-line">
                     <div class="time">
                         <i class="fa-solid fa-clock icon"></i>
-                        <h2> 6:00PM - 7:00PM</h2>
+                        <p class="time-schedule"> 6:00PM - 7:00PM</p>
                     </div>
-                    <h3 class="event-highlights">STUDENT <br> PORTFOLIO VIEW</h3>
+                    <h4 class="event-highlights">Student<br>Portfolio view</h4>
                     <p class="event-location">at Level 4 Labs</p>
                     <p class="event-description">
                         Explore the portfolios of our talented students and see their creativity
@@ -110,9 +166,9 @@
                 <article class="section-brk-line">
                     <div class="time">
                         <i class="fa-solid fa-clock icon"></i>
-                        <h2>7:00PM - 8:00PM</h2>
+                        <p class="time-schedule">7:00PM - 8:00PM</p>
                     </div>
-                    <h3 class="event-highlights">FOOD & DRINKS <br> MINGLE & NETWORKING</h3>
+                    <h4 class="event-highlights">Food & Drinks<br>Mingle & Networking</h4>
                     <p class="event-location">at The Chef's Table</p>
                     <p class="event-description">
                         Enjoy appetizers and a cash bar while connecting with fellow attendees,
@@ -125,7 +181,7 @@
         <article class="invite grid-con">
             <h3 class="col-span-full invite-heading">We invite you to a Journey of
                 Innovation and Design</h3>
-            <h4 class="col-span-full">Let's honor Imagination, Growth, and Community</h4>
+            <p class="second-heading col-span-full"> <i>Let's honor Imagination, Growth, and Community!</i></p>
             <p class="col-span-full m-col-start-3 m-col-end-12 l-col-start-3 l-col-end-11">Join us for a special evening
                 filled with inspiration, exploration, and collaboration! This showcase will highlight the remarkable
                 projects of our IDP3 and UED students, along with special Spotlight presentations on the Royal Canadian
@@ -138,7 +194,7 @@
 
         <div class="grid-con">
             <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
-                <h2 class="hidden">video</h2>
+                <h2 class="hidden">Video Player</h2>
                 <video controls preload="metadata" poster="images/placeholder.png">
                     <source src="video/intro.mp4" type="video/mp4">
                     <source src="video/intro.webm" type="video/webm">
@@ -165,46 +221,143 @@
         </div>
 
         <section id="project-section" class="grid-con">
-            <h2 class="hidden">Project Detail section</h2>
+            <h2 class="col-span-full">PROJECT DETAILS:</h2>
             <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
                 <div class="icon">
-                    <i class="fa-solid fa-users"></i>
+                    <img src="images/users.svg" alt="user icon">
                 </div>
                 <div>
                     <p>Level 4 students collaborated on a project for the Royal Canadian Air Force Association (Local
-                        427
-                        Wing), creating a digital initiative to preserve the legacy of the last remaining RCAF building
-                        in
-                        London, ON, while engaging the community and honoring Canadian veterans.
+                        427 Wing), creating a digital initiative to preserve the legacy of the last remaining RCAF
+                        building in London, ON, while engaging the community and honoring Canadian veterans.
                     </p>
                 </div>
             </div>
             <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
-                <div class="icon">
-                    <i class="fa-solid fa-lightbulb"></i>
+                <div class="icon-discover">
+                    <img src="images/discover.svg" alt="discover icon">
                 </div>
                 <div>
                     <p>Discover the innovative projects of our IDP3 and UED students, including Spotlight presentations
-                        that
-                        highlight the legacy and community impact of the Royal Canadian Air Force Association (Local 427
-                        Wing).
+                        that highlight the legacy and community impact of the Royal Canadian Air Force Association
+                        (Local 427 Wing).
                     </p>
                 </div>
             </div>
             <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
                 <div class="icon">
-                    <i class="fa-solid fa-laptop-code"></i>
+                    <img src="images/laptop-code.svg" alt="laptop-code icon">
                 </div>
                 <div>
                     <p>Experience the enthusiasm and talent of our students as they present their portfolios,
-                        demonstrating
-                        their expertise in interactive media, UX design, web development, and more. </p>
+                        demonstrating their expertise in interactive media, UX design, web development, and more. </p>
                 </div>
             </div>
         </section>
 
+        <section class="grid-con" id="project-exhibition">
+            <h2 class="hidden">Project Exhibition</h2>
+
+            <div class="slider-heading col-span-4 m-col-span-12 l-col-span-12">
+                <h3>Student project exhibit</h3>
+                <p>Groups For Project “Royal Canadian Air Force Association (Local 427 Wing)”</p>
+            </div>
+
+            <section class="slider col-span-4 m-col-span-12 l-col-span-12">
+                <h2 class="hidden">Project Slider</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/1.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/1.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/1.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/sunflower.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/sunflower.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/sunflower.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/A-Cat.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/A-Cat.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/A-Cat.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="group-caption col-span-4 m-col-span-12 l-col-span-12">
+                <h2 class="hidden">Group Caption</h2>
+                <div class="group-caption__title"></div>
+                <div class="group-caption__names"></div>
+                <div class="button-container">
+                    <button class="red-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="red-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+        </section>
+
+        <section class="teachers-section grid-con">
+            <h2 class="hidden">Professor Introduction</h2>
+            <h3 class="section-title col-span-full">MEET OUR PROFESSORS</h3>
+
+            <div class="circle-wrapper col-span-full m-col-span-6 l-col-span-6">
+                <div class="circle-path"></div>
+                <div class="dot"></div>
+                <div class="circle-inner">
+                    <img src="images/prof_marco_de_luca.png" alt="Marco" class="slide1">
+                    <img src="images/prof_justin_brunner.png" alt="Justin" class="slide2">
+                    <img src="images/prof_jarrod_osterback.jpg" alt="Jarrod" class="slide3">
+                    <img src="images/prof_joe_kormendi.png" alt="Joe" class="slide4">
+                </div>
+            </div>
+
+
+            <div class="logo-right-side col-span-full m-col-span-6 l-col-span-6">
+                <div class="logo-line">
+                    <img class="fanshawe_logo_red" src="images/fanshawe-logo-red.svg" alt="red fanshawe logo">
+                    <hr class="separator">
+                </div>
+                <div class="teacher-info">
+                    <div class="info info1">
+                        <div class="role">IDP Program Coordinator and Professor</div>
+                        <h3>Marco De Luca</h3>
+                        <p>“Utilizing a diverse range of media...”</p>
+                    </div>
+                    <div class="info info2">
+                        <div class="role">Professor</div>
+                        <h3>Justin Brunner</h3>
+                        <p>“Design is not just how it looks...”</p>
+                    </div>
+                    <div class="info info3">
+                        <div class="role">Professor</div>
+                        <h3>Jarrod Osterback</h3>
+                        <p>“Students have shown incredible growth...”</p>
+                    </div>
+                    <div class="info info4">
+                        <div class="role">Professor</div>
+                        <h3>Joe Kormendi</h3>
+                        <p>“Creativity is intelligence having fun.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section id="program">
-            <h2 class="hidden">IDP3 introduction section</h2>
+            <h2 class="hidden">IDP3 introduction</h2>
             <div class="program-slideshow-container">
                 <div id="top-program-slideshow">
                     <div class="top-slideshow-img">1</div>
@@ -223,7 +376,7 @@
             </div>
 
             <div id="about-idp3" class="grid-con">
-                <h3 class="col-span-full">INTERACTIVE MEDIA DESIGN</h3>
+                <h3 class="col-span-full">Interactive Media Deisgn</h3>
                 <p class="col-span-full m-col-start-2 m-col-end-12">Our two-year Interactive Media Design diploma helps
                     you build the skills to succeed in digital media. From web design to 3D animation, you'll learn the
                     latest tools to create amazing content and smooth user experiences—preparing you for careers like
@@ -251,6 +404,7 @@
         </section>
 
         <section id="highfive-portfolio" class="grid-con">
+            <h2 class="hidden">High five portfolio showcase</h2>
             <h3 id="highfive-showcase" class="col-span-full m-col-start-2">Behind the Website</h3>
             <p class="col-span-full m-col-start-2">The team turning ideas into reality</p>
             <div class="highfive-portfolio-card col-span-full">
@@ -325,6 +479,7 @@
         </section>
 
         <section id="student-portfolio" class="grid-con">
+            <h2 class="hidden">Student portofolio showecase</h2>
             <h3 id="student-shocase" class="col-span-full m-col-start-2">See Our Work</h3>
             <p class="center col-span-full m-col-start-2">Discover the talent of our student</p>
             <div class="student-portfolio-card col-span-full">
@@ -692,8 +847,58 @@
             </div>
         </section>
 
-    </main>
+        <footer class="footer">
+            <section class="grid-con">
+                <h2 class="hidden">Footer</h2>
 
+                <div class="footer-info col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="hidden">Logo</h3>
+                    <img src="images/fanshawe_logo_white.svg" alt="Fanshawe Logo" class="footer-logo">
+                    <hr class="footer-line">
+                </div>
+
+                <div class="footer-info col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">
+                    <h3 class="hidden">Address and Links</h3>
+                    <p>Fanshawe College, 137 Dundas St,<br>London, ON N6A 1E9</p>
+                    <a href="https://www.fanshawec.ca/why-fanshawe/campuses" target="_blank">Our Campuses →</a><br>
+                    <a href="https://www.fanshawec.ca/contact-us" target="_blank">Contact Us →</a>
+                </div>
+
+                <div class="footer-buttons col-span-4 m-col-star-9 m-col-end-13 l-col-star-10 l-col-end-13">
+                    <h3 class="hidden">Buttons</h3>
+                    <a class="footer-btn" href="#event-itinerary">EVENT DETAILS</a>
+                    <a class="footer-btn"
+                        href="https://www.google.com/maps/place/Fanshawe+London+Downtown+Campus+(137+Dundas)/@42.9833845,-81.2511139,19z/data=!4m6!3m5!1s0x882ef21b3ee98e51:0x243531a1cacd1219!8m2!3d42.9831841!4d-81.2506356!16s%2Fg%2F1q67gvv0m?entry=ttu"
+                        target="_blank">EVENT LOCATION</a>
+                    <a class="footer-btn" href="https://www.fanshawec.ca/why-fanshawe/tour-fanshawe"
+                        target="_blank">TOUR FANSHAWE</a>
+                </div>
+
+                <div class="footer-social col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="hidden">Social Media</h3>
+                    <a href="https://www.facebook.com/fanshawecollege" target="_blank"
+                        aria-label="Fanshawe on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fanshawecollege/" target="_blank"
+                        aria-label="Fanshawe on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/fanshawe-college/" target="_blank"
+                        aria-label="Fanshawe on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/fanshawecollege" target="_blank" aria-label="Fanshawe on Twitter"><i
+                            class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/MyFanshawe" target="_blank"
+                        aria-label="Fanshawe on YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="footer-copy col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="hidden">Copyright</h3>
+                    <p>Fanshawe College, IDP3 | Created by Team High Five © 2026 All Rights Reserved.</p>
+                </div>
+
+            </section>
+        </footer>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

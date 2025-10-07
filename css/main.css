@@ -21,11 +21,15 @@ body {
 }
 
 h2 { font-size: 36px;}
-h3 { font-size: 24px;}
+h3 { font-size: 28px;}
 h4 { font-size: 20px;}
 h5 { font-size: 18px;}
 
 a { text-decoration: none;}
+
+section {
+  scroll-margin-top: 80px; 
+}
 
 /* -------
  header 
@@ -50,8 +54,8 @@ header {
 
 #header-logo img {  
   height: 40px;
-  width:auto;
-  margin-bottom: -30px;
+  width: auto;
+  margin-top: 20px;
 }
 
 /* ----------
@@ -80,7 +84,7 @@ input#hamburger:checked ~ #header-nav {
 }
 
 #header-nav {
-  background-color: white;
+  background-color: #ED202D;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -94,7 +98,7 @@ input#hamburger:checked ~ #header-nav {
 
 #header-nav-close {
   font-size: 1.7em;
-  color: #B3272D;
+  color: #fff;
   position: absolute;
   top: 10px;
   right: 25px;
@@ -110,16 +114,16 @@ input#hamburger:checked ~ #header-nav {
 }
 
 #header-nav nav ul li {
-  margin: 20px 50px 20px 10px;
-  border-bottom: 2px solid #6464695d;
+  margin: 30px 50px 30px 10px;
   padding-bottom: 15px;
 }
 
 #header-nav nav ul li a {
   font-size: 2em;
-  color: #B3272D;
+  color: #fff;
   display: block;
   transform: scale(1);
+  transform-origin: left center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -131,31 +135,124 @@ hero
 --------------------------*/
 #hero {
 margin-top: 150px;
+margin-bottom: 100px;
 }
 
-#hero-container {
-  height: 350px;
-  margin: 0 auto;
-  position: relative;
+#hero-title {
+  text-transform: uppercase;
+}
+
+#hero-title p {
+  color: #646469;
+  margin: 0;
+  font-weight: 500;
+}
+
+#hero-title h3 {
+  color: #ED202D;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+#hero-title h3:last-child {
+  color: #646469;
+}
+
+#title-date {
+  color: #646469;
+  font-weight: 700;
+}
+
+#mob-hero-img {
   overflow: hidden;
+  border-radius: 20px;
 }
 
-#hero-letter {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  left: 0;
+#tab-desk-hero-img {
+  display: none;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+#title-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes fade {
-  from { opacity: .4;}
-  to { opacity: 1;}
+#title-schedule-btn, #title-learnmore-btn {
+  margin: auto 20px;
 }
+
+#title-schedule-btn {
+  color: #646469;
+  background-color: #fff;
+  border: 2px solid #646469;
+  width: 200px;
+  height: 45px;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 500;
+  transform: scale(1);
+  transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
+}
+
+#title-schedule-btn:hover {
+  color: #fff;
+  background-color: #646469;
+  transform: scale(1.05); 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
+}
+
+#title-learnmore-btn {
+  color: #fff;
+  background-color: #ED202D;
+  border: 2px solid #ED202D;
+  width: 200px;
+  height: 45px;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 500;
+  transform: scale(1);
+  transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
+}
+
+#title-learnmore-btn:hover {
+  color: #ED202D;
+  background-color: #fff;
+  transform: scale(1.05); 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
+}
+
+ #countdown {
+  display: flex;
+  margin: 0 auto 30px auto;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .colon {
+  margin-top: -10px;
+  font-weight: 800;
+  color: #646469;
+ }
+
+  #countdown h3 {
+    font-size: 36px;
+    margin: 5px;
+    color: #ED202D;
+  }
+
+.countdown-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
 
 /*----------------
 invitation card
@@ -268,11 +365,13 @@ margin: 0 0 10px 0;
   }
 }
 
-#event-image img {
- display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
+.eventimg {
+  background-color: #ED202D;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
@@ -349,7 +448,7 @@ p.event-location {
 Invitation section
 ----------------------- */
 .invite {
-      background-color: #B3272D;
+      background-color: #ED202D;
       color: white;
       text-align: center;
       transform: translateX(-150%);
@@ -484,8 +583,25 @@ outline-offset: 0.125rem;
 /*---------------------
 Project section
 ---------  */
+#project-section h2 {
+  color: #ED202D;
+  font-size: 28px;
+  text-align: center;
+}
 #project-section {
 margin-top: 50px;
+transform: translateY(600px);
+    animation: fadeUp 2s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    opacity: 0;
+}
+@keyframes fadeup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 }
 
 .event-details {
@@ -793,36 +909,35 @@ Introduction of IDP3
 ----------------------*/
 #program {
   margin: 150px auto;
-  background-color: #B3272D;
+  background-color: #ED202D;
   color: white;
 }
 
 .program-slideshow-container {
   width: 100%;
   overflow: hidden;
-  padding: 50px 0;
   position: relative;
 }
 
 #top-program-slideshow {
+  padding-top: 50px;
   display: flex;
-  gap: 20px;
-  animation: topSlideshow 30s linear infinite;
+  gap: 30px;
+  animation: topSlideshow 50s linear infinite;
+  margin-bottom: 30px;
 }
 
 #bottom-program-slideshow {
+  padding-bottom: 50px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: end;
   align-items: end;
-  animation: bottomSlideshow 30s linear infinite;
+  animation: bottomSlideshow 50s linear infinite;
 }
 
-.top-slideshow-img, .bottom-slideshow-img {
-  height: 150px;
-  width: 200px;
-  background-color: white;
-  border: 2px solid #646469;
+.top-slideshow-img img, .bottom-slideshow-img img {
+  border: 10px solid #fff;
   flex-shrink: 0;
 }
 
@@ -849,31 +964,37 @@ Introduction of IDP3
 }
 #about-idp3 {
   text-align: center;
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
 }
 
 #about-idp3 h3 {
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 #about-idp3 p {
-  margin: 20px auto;
+  margin: 10px auto;
+}
+
+#about-idp3 p:last-child {
+  margin: 0 auto;
 }
 
 #about-idp3 a {
-  color: #B3272D;
-  background-color: white;
-  border: 2px solid #646469;
+  color: #ED202D;
+  background-color: #fff;
+  border: 2px solid #fff;
+  font-weight: 500;
   border-radius: 30px;
   padding: 10px 20px;
   width: 200px;
-  margin: 10px auto;
+  margin: 20px auto 10px auto;
   transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
 }
 
 #about-idp3 a:hover {
   color: white;
-  background-color: #B3272D;
+  background-color: #ED202D;
   border: 2px solid white;
   transform: scale(1.05); 
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
@@ -1150,64 +1271,76 @@ font-size: 16px;
 tablet style
 ---------------------------------*/
 @media screen and (min-width: 768px) {
-
-/* -------
- header 
-----------*/
-
-#header-logo img {  
-margin-bottom: -70px;
-}
-
-  /* ----------
-header navigation 
-------------------*/
-  #menu-show{
-      display: none;
-  }
-
-  #header-nav {
-      width: 0;
-      height: 0;
-      position: relative;
-      opacity: 1;
-      transition: none;
-      transform: none;
-  }
-
-  #header-nav-close {
-      display: none;
-  }
-
-  #header-nav nav ul {
-  list-style-type: none;
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  flex-shrink: 0;
-  gap: 25px;
-}
-
-#header-nav nav ul li {
-  margin: 0;
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-#header-nav nav ul li a {
-  font-size: 1em;
-  font-weight: bold;
-  color: white;
-  white-space: nowrap;
-  transition: none;
-}
-
 /* ----------------
 hero
 -----------------*/
-#hero-container {
-  height: 550px;
+
+#tab-desk-hero-img {
+  display: block;
+}
+
+#mob-hero-img {
+  display: none;
+}
+
+#tab-desk-hero-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+#hero-title {
+  margin-top: 30px;
+}
+
+#hero-title h3 {
+  font-size: 54px;
+}
+
+ #countdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0;
+ }
+
+ .colon {
+  margin-top: 25px;
+  font-weight: 800;
+  color: #646469;
+ }
+
+  #countdown h3 {
+    font-size: 30px;
+    margin: 5px;
+    color: #ED202D;
+  }
+
+.countdown-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.countdown-time:first-child {
+  margin-left: 0;
+}
+
+#title-btn {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#title-schedule-btn, #title-learnmore-btn {
+  margin: auto 10px auto 0;
+}
+
+#title-learnmore-btn {
+  padding: 10px 5px;
 }
 
 /*_--------------
@@ -1258,14 +1391,9 @@ border-bottom: 1px solid white;
 /* ------------------
 Event details Tablet version 
 ---------------------------*/
-#event-itinerary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin: 65px;
+.event-itinerary {
+  margin-top: 170px;
 }
-
 .event{
   color: #ED202D;
   font-size: 30px;
@@ -1277,11 +1405,9 @@ Event details Tablet version
   margin-top: 4px;
 }
 
-#event-image img {
- display: block;
-  width: auto;
-  height: auto;
-  margin: 0;
+.eventimg {
+  margin-top: 18px;
+  height: 240px;
 }
 
 .margin {
@@ -1300,15 +1426,10 @@ Event details Tablet version
 Invitation section Tablet Version 
 --------------------------------*/
 .invite {
-  background-color: #B3272D;
+  background-color: #ED202D;
   color: white;
   text-align: center;
   margin-top: 50px;
-}
-
-.heading {
-  margin-top: 50px;
-  font-size: 23px;
 }
 
 .invite p {
@@ -1328,14 +1449,17 @@ Invitation section Tablet Version
 
 
 
-    /* ------------------
-Introduction of IDP3 
-----------------------*/
-
-  .top-slideshow-img, .bottom-slideshow-img {
+/*------------------
+IDP3
+---------------------*/
+.top-slideshow-img img, .bottom-slideshow-img img {
   height: 200px;
-  width: 250px;
-  }
+  width: 280px;
+}
+
+/*-------------
+project exhibition
+---------------------*/
 
 .slider-heading {
   position: relative;
@@ -1431,17 +1555,81 @@ desktop style
 header navigation 
 ------------------*/
 
-  #header-nav nav ul {
-      margin-left: 30px;
-      gap: 50px;
+
+    #menu-show{
+      display: none;
   }
 
-    /* ----------------
+  #header-nav {
+      width: 0;
+      height: 0;
+      position: relative;
+      opacity: 1;
+      transition: none;
+      transform: none;
+  }
+
+  #header-nav-close {
+      display: none;
+  }
+  
+  #header-nav nav ul {
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 160px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 50px;
+}
+
+#header-nav nav ul li {
+  margin: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+#header-nav nav ul li a {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  transition: none;
+}
+ /* ----------------
 hero
 -----------------*/
-#hero-container {
-  height: 650px;
+#tab-desk-hero-img {
+  margin-top: 30px;
 }
+
+#hero-title {
+  margin-top: 100px;
+}
+
+#hero-title h3 {
+  font-size: 65px;
+}
+
+p#title-date {
+  font-size: 20px;
+}
+
+ #countdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0;
+ }
+
+ .colon {
+  margin-top: 35px;
+ }
+
+  #countdown h3 {
+    font-size: 40px;
+    margin:10px;
+  }
 
   /*-------------
   invitation card
@@ -1489,13 +1677,6 @@ hero
   padding-bottom: 20px;
 }
 
-/* ------------------
-Event details fo desktop version 
----------------------------*/
-#event-itinerary {
-  gap: 90px;
-}
-
    /* ------------------
    Invitation Section for desktop version 
    -----------------------------------------*/
@@ -1530,6 +1711,15 @@ Event details fo desktop version
 #full-screen {
   margin-left: 300px;
 }
+
+/*------------------
+IDP3
+---------------------*/
+.top-slideshow-img img, .bottom-slideshow-img img {
+  height: 250px;
+  width: 350px;
+}
+
 
 /* ---------------
 highfive portfolio showcase 

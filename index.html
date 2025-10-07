@@ -4,38 +4,1008 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Industry Night 2026</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
+    <h1 class="hidden">Welcome to Industry Night 2026 Website</h1>
     <header class="full-width-grid-con">
+        <h2 class="hidden">Header Navigation</h2>
         <div class="grid-con">
-        <div id="header-logo" class="col-start-1">
-            <img src="images/fanshawe_logo_white.svg">
-        </div>
+            <a href="index.html" id="header-logo" class="col-start-1">
+                <img src="images/fanshawe_logo_white.svg" alt="fanshawe logo">
+            </a>
 
-        <input type="checkbox" id="hamburger">
-          <label for="hamburger" id="menu-show" class="col-end-5">
-            <img src="images/mobile-menubar.svg">
-          </label>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger" id="menu-show" class="col-end-5">
+                <img src="images/mobile-menubar.svg" alt="hamburger menu bar">
+            </label>
 
-        <div id="header-nav" class="m-col-start-4 m-col-end-13 l-col-start-7 l-col-end-13">
-            <label for="hamburger" id="header-nav-close">X</label>
-            <nav>
-                <ul>
-                    <li><a href="#">EVENT</a></li>
-                    <li><a href="#">PROJECT EXHIBIT</a></li>
-                    <li><a href="#">PROGRAM</a></li>
-                    <li><a href="#">PORTFOLIOS</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div id="header-nav" class="m-col-start-5 m-col-end-13 l-col-start-7 l-col-end-13">
+                <label for="hamburger" id="header-nav-close">X</label>
+                <nav>
+                    <ul>
+                        <li><a href="#event-itinerary">EVENT</a></li>
+                        <li><a href="#project-exhibition">PROJECT EXHIBIT</a></li>
+                        <li><a href="#program">PROGRAM</a></li>
+                        <li><a href="#highfive-showcase">PORTFOLIOS</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-   
+    <main>
+        <section id="hero" class="grid-con">
+            <h2 class="hidden">hero section</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <div id="hero-title" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <p>talent showcase</p>
+                <h3>Industry night</h3>
+                <h3>2026</h3>
+            </div>
+
+            <p id="title-date" class="col-span-2 m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">April 23rd 2026</p>
+
+                <div id="mob-hero-img" class="col-span-full">
+                    <img src="images/mob-hero.webp" alt="hero image of mobile">
+                </div>
+
+                <div id="countdown" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <div class="countdown-time">
+                    <h3 id="days"></h3>
+                    <small>Day</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="hours"></h3>
+                    <small>Hours</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="minutes"></h3>
+                    <small>Minutes</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="seconds"></h3>
+                    <small>Seconds</small>
+                </div>
+               </div>
+
+               <div id="title-btn" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+               <a herf="#event-itinerary" id="title-schedule-btn">Schedule</a>
+               <a herf="#envelope" id="title-learnmore-btn">Learn more</a>
+               </div>
+
+               </div>
+
+               <div id="tab-desk-hero-img" class="m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
+                    <img src="images/tab-hero.webp"
+                    srcset="images/tab-hero.webp 768w,
+                    images/desk-hero.webp 1200w"
+                    alt="industry night hero">
+                </div>
+
+        </section>
+
+        <section class="invitation-card grid-con">
+            <h2 class="hidden">Invitation Card</h2>
+            <div class="envelope col-span-full m-col-span-full l-col-span-full">
+                <div class="text"> WELCOME TO OUR</div>
+                <h3>Industry Night 2026</h3>
+                <div class="date">
+                    <p class="bold-20">April</p>
+                    <p class="line"><span>THU</span><br>23</p>
+                    <p class="bold-20">2026</p>
+                </div>
+                <div class="location">
+                    <p>THE GOOD FOUNDATION INC. THEATHER</p>
+                    <p>137 Dundas St, Fanshawe LDA Building, London, ON N6A 1E9</p>
+                </div>
+                <div class="countdown">
+                    <p>217 : 09 : 58 : 34</p>
+                    <div id="countdown-time" class="col-span-full">
+                        <p>Days</p>
+                        <p>Hours</p>
+                        <p>Minutes</p>
+                        <p>Seconds</p>
+                    </div>
+                    <p>Until Industry Night 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="event-itinerary" class="grid-con">
+            <h2 class="hidden">Event Itinerary section</h2>
+            <div class="col-span-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
+                <h3 class="event">
+                    <span class="event-heading">Event</span><br>
+                    <span class="itinerary">Itinerary</span>
+                </h3>
+                <!-- <div class="eventimg">image</div> -->
+                <div class="col-span-full" id="event-image">
+                    <img sizes=" (min-width: 400px) 450px,
+            (min-width: 300px) 350px,
+            (min-width: 250px) 300px,
+            100vw" srcset="images/event-200.jpg 200w, 
+            images/event-300.jpg 300w, 
+            images/event-400.jpg 400w" src="images/event-400.jpg" alt="event-itinerary image">
+                </div>
+            </div>
+
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
+                <article>
+                    <div class="time margin">
+                        <i class="fa-solid fa-clock icon"></i>
+                        <p class="time-schedule">4:30PM - 6:00PM</p>
+                    </div>
+                    <h4 class="event-highlights">Spotlight<br>Presentations</h4>
+                    <p class="event-location">at The Good Foundation Inc. Theatre</p>
+                    <p class="event-description">
+                        Get inspired by featured projects and student collaborators as they share
+                        their work and ideas.
+                    </p>
+                </article>
+
+
+                <article class="section-brk-line">
+                    <div class="time">
+                        <i class="fa-solid fa-clock icon"></i>
+                        <p class="time-schedule"> 6:00PM - 7:00PM</p>
+                    </div>
+                    <h4 class="event-highlights">Student<br>Portfolio view</h4>
+                    <p class="event-location">at Level 4 Labs</p>
+                    <p class="event-description">
+                        Explore the portfolios of our talented students and see their creativity
+                        and skills across various disciplines.
+                    </p>
+                </article>
+
+                <article class="section-brk-line">
+                    <div class="time">
+                        <i class="fa-solid fa-clock icon"></i>
+                        <p class="time-schedule">7:00PM - 8:00PM</p>
+                    </div>
+                    <h4 class="event-highlights">Food & Drinks<br>Mingle & Networking</h4>
+                    <p class="event-location">at The Chef's Table</p>
+                    <p class="event-description">
+                        Enjoy appetizers and a cash bar while connecting with fellow attendees,
+                        reconnecting with old friends, and making new connections.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <article class="invite grid-con">
+            <h3 class="col-span-full invite-heading">We invite you to a Journey of
+                Innovation and Design</h3>
+            <p class="second-heading col-span-full"> <i>Let's honor Imagination, Growth, and Community!</i></p>
+            <p class="col-span-full m-col-start-3 m-col-end-12 l-col-start-3 l-col-end-11">Join us for a special evening
+                filled with inspiration, exploration, and collaboration! This showcase will highlight the remarkable
+                projects of our IDP3 and UED students, along with special Spotlight presentations on the Royal Canadian
+                Air Force Association (Local 427 Wing) initiative. Discover the creativity, dedication, and vision
+                behind each portfolio as students share their work across diverse fields. <br>
+                This is more than a celebration of talent — it's an opportunity to connect, exchange ideas, and inspire
+                the next generation of professionals. Your presence, encouragement, and feedback will play a vital role
+                in supporting their growth and future success.</p>
+        </article>
+
+        <div class="grid-con">
+            <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+                <h2 class="hidden">Video Player</h2>
+                <video controls preload="metadata" poster="images/placeholder.png">
+                    <source src="video/intro.mp4" type="video/mp4">
+                    <source src="video/intro.webm" type="video/webm">
+                    <p>Your browser does not support the video tag.
+                    </p>
+                </video>
+                <div class="video-controls" id="video-controls">
+                    <button id="play-button">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="pause-button">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                    <button id="stop-button">
+                        <i class="fa-solid fa-stop"></i>
+                    </button>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                    <button id="full-screen">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section id="project-section" class="grid-con">
+            <h2 class="col-span-full">PROJECT DETAILS:</h2>
+            <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+                <div class="icon">
+                    <img src="images/users.svg" alt="user icon">
+                </div>
+                <div>
+                    <p>Level 4 students collaborated on a project for the Royal Canadian Air Force Association (Local
+                        427 Wing), creating a digital initiative to preserve the legacy of the last remaining RCAF
+                        building in London, ON, while engaging the community and honoring Canadian veterans.
+                    </p>
+                </div>
+            </div>
+            <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+                <div class="icon-discover">
+                    <img src="images/discover.svg" alt="discover icon">
+                </div>
+                <div>
+                    <p>Discover the innovative projects of our IDP3 and UED students, including Spotlight presentations
+                        that highlight the legacy and community impact of the Royal Canadian Air Force Association
+                        (Local 427 Wing).
+                    </p>
+                </div>
+            </div>
+            <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+                <div class="icon">
+                    <img src="images/laptop-code.svg" alt="laptop-code icon">
+                </div>
+                <div>
+                    <p>Experience the enthusiasm and talent of our students as they present their portfolios,
+                        demonstrating their expertise in interactive media, UX design, web development, and more. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-con" id="project-exhibition">
+            <h2 class="hidden">Project Exhibition</h2>
+
+            <div class="slider-heading col-span-4 m-col-span-12 l-col-span-12">
+                <h3>Student project exhibit</h3>
+                <p>Groups For Project “Royal Canadian Air Force Association (Local 427 Wing)”</p>
+            </div>
+
+            <section class="slider col-span-4 m-col-span-12 l-col-span-12">
+                <h2 class="hidden">Project Slider</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/1.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/1.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/1.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/sunflower.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/sunflower.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/sunflower.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/A-Cat.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/A-Cat.jpg')"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="snapper" style="background-image:url('images/A-Cat.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="group-caption col-span-4 m-col-span-12 l-col-span-12">
+                <h2 class="hidden">Group Caption</h2>
+                <div class="group-caption__title"></div>
+                <div class="group-caption__names"></div>
+                <div class="button-container">
+                    <button class="red-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="red-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+        </section>
+
+        <section class="teachers-section grid-con">
+            <h2 class="hidden">Professor Introduction</h2>
+            <h3 class="section-title col-span-full">MEET OUR PROFESSORS</h3>
+
+            <div class="circle-wrapper col-span-full m-col-span-6 l-col-span-6">
+                <div class="circle-path"></div>
+                <div class="dot"></div>
+                <div class="circle-inner">
+                    <img src="images/prof_marco_de_luca.png" alt="Marco" class="slide1">
+                    <img src="images/prof_justin_brunner.png" alt="Justin" class="slide2">
+                    <img src="images/prof_jarrod_osterback.jpg" alt="Jarrod" class="slide3">
+                    <img src="images/prof_joe_kormendi.png" alt="Joe" class="slide4">
+                </div>
+            </div>
+
+
+            <div class="logo-right-side col-span-full m-col-span-6 l-col-span-6">
+                <div class="logo-line">
+                    <img class="fanshawe_logo_red" src="images/fanshawe-logo-red.svg" alt="red fanshawe logo">
+                    <hr class="separator">
+                </div>
+                <div class="teacher-info">
+                    <div class="info info1">
+                        <div class="role">IDP Program Coordinator and Professor</div>
+                        <h3>Marco De Luca</h3>
+                        <p>“Utilizing a diverse range of media...”</p>
+                    </div>
+                    <div class="info info2">
+                        <div class="role">Professor</div>
+                        <h3>Justin Brunner</h3>
+                        <p>“Design is not just how it looks...”</p>
+                    </div>
+                    <div class="info info3">
+                        <div class="role">Professor</div>
+                        <h3>Jarrod Osterback</h3>
+                        <p>“Students have shown incredible growth...”</p>
+                    </div>
+                    <div class="info info4">
+                        <div class="role">Professor</div>
+                        <h3>Joe Kormendi</h3>
+                        <p>“Creativity is intelligence having fun.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       <section id="program">
+            <h2 class="hidden">IDP3 introduction</h2>
+
+            <div id="about-idp3" class="grid-con">
+                <h3 class="col-span-full">Interactive Media Deisgn</h3>
+                <p class="col-span-full m-col-start-2 m-col-end-12">The Interactive Media Design program at Fanshawe College is a two-year diploma that combines creativity and technology. You'll gain hands-on experience in web design, UX/UI, motion graphics, and 3D animation using industry-standard tools to bring digital ideas to life.</p>
+                <p  class="col-span-full m-col-start-2 m-col-end-12">Graduates are ready for careers in web development, motion design, and UI/UX design, equipped with both creative and technical skills to succeed in the fast-changing digital media industry.</p>
+                <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"
+                    class="col-span-full">Learn More</a>
+            </div>
+            
+            <div class="program-slideshow-container">
+                <div id="top-program-slideshow">
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program1.jpg"
+                        srcset="images/l-program1.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 1">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program2.jpg"
+                        srcset="images/l-program2.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 2">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program3.jpg"
+                        srcset="images/l-program3.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 3">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program4.jpg"
+                        srcset="images/l-program4.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 4">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program5.jpg"
+                        srcset="images/l-program5.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 5">
+                    </div>
+
+                    <!-- for loop -->
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program1.jpg"
+                        srcset="images/l-program1.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 1">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program2.jpg"
+                        srcset="images/l-program2.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 2">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program3.jpg"
+                        srcset="images/l-program3.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 3">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program4.jpg"
+                        srcset="images/l-program4.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 4">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program5.jpg"
+                        srcset="images/l-program5.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-slideshow-container">
+                <div id="bottom-program-slideshow">
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program6.jpg"
+                        srcset="images/l-program6.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 6">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program7.jpg"
+                        srcset="images/l-program7.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 7">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program8.jpg"
+                        srcset="images/l-program8.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 8">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program9.jpg"
+                        srcset="images/l-program9.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 9">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program10.jpg"
+                        srcset="images/l-program10.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 10">
+                    </div>
+
+                    <!-- for loop -->
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program6.jpg"
+                        srcset="images/l-program6.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 6">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program7.jpg"
+                        srcset="images/l-program7.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 7">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program8.jpg"
+                        srcset="images/l-program8.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 8">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program9.jpg"
+                        srcset="images/l-program9.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 9">
+                    </div>
+                    <div class="top-slideshow-img">
+                        <img src="images/s-program10.jpg"
+                        srcset="images/l-program10.jpg 768w"
+                        sizes="100vw"
+                        alt="IDP3 image 10">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="highfive-portfolio" class="grid-con">
+            <h2 class="hidden">High five portfolio showcase</h2>
+            <h3 id="highfive-showcase" class="col-span-full m-col-start-2">Behind the Website</h3>
+            <p class="col-span-full m-col-start-2">The team turning ideas into reality</p>
+            <div class="highfive-portfolio-card col-span-full">
+                <div class="highfive-portfolio-box">
+                    <div class="fanshawe-medal">
+                        <img src="images/fanshawe-medal.svg" alt="medal with fanshawe logo">
+                    </div>
+                    <div class="highfive-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="highfive-portfolio-info">
+                        <h4>Student Name</h4>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="highfive-portfolio-box">
+                    <div class="fanshawe-medal">
+                        <img src="images/fanshawe-medal.svg" alt="medal with fanshawe logo">
+                    </div>
+                    <div class="highfive-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="highfive-portfolio-info">
+                        <h4>Student Name</h4>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="highfive-portfolio-box">
+                    <div class="fanshawe-medal">
+                        <img src="images/fanshawe-medal.svg" alt="medal with fanshawe logo">
+                    </div>
+                    <div class="highfive-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="highfive-portfolio-info">
+                        <h4>Student Name</h4>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="highfive-portfolio-box">
+                    <div class="fanshawe-medal">
+                        <img src="images/fanshawe-medal.svg" alt="medal with fanshawe logo">
+                    </div>
+                    <div class="highfive-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="highfive-portfolio-info">
+                        <h4>Student Name</h4>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="highfive-portfolio-box">
+                    <div class="fanshawe-medal">
+                        <img src="images/fanshawe-medal.svg" alt="medal with fanshawe logo">
+                    </div>
+                    <div class="highfive-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="highfive-portfolio-info">
+                        <h4>Student Name</h4>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="student-portfolio" class="grid-con">
+            <h2 class="hidden">Student portofolio showecase</h2>
+            <h3 id="student-shocase" class="col-span-full m-col-start-2">See Our Work</h3>
+            <p class="center col-span-full m-col-start-2">Discover the talent of our student</p>
+            <div class="student-portfolio-card col-span-full">
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+                <div class="student-portfolio-box">
+                    <div class="student-portfolio-img">
+                        <img src="cat.jpg" alt="Student Image">
+                    </div>
+                    <div class="student-portfolio-info">
+                        <p class="student-name">Student Name</p>
+                        <p>Professional Title</p>
+                        <p class="quato">“I'm not just a cat, I'm a designer... with claws for creativiy"</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <section class="grid-con">
+                <h2 class="hidden">Footer</h2>
+
+                <div class="footer-info col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="hidden">Logo</h3>
+                    <img src="images/fanshawe_logo_white.svg" alt="Fanshawe Logo" class="footer-logo">
+                    <hr class="footer-line">
+                </div>
+
+                <div class="footer-info col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">
+                    <h3 class="hidden">Address and Links</h3>
+                    <p>Fanshawe College, 137 Dundas St,<br>London, ON N6A 1E9</p>
+                    <a href="https://www.fanshawec.ca/why-fanshawe/campuses" target="_blank">Our Campuses →</a><br>
+                    <a href="https://www.fanshawec.ca/contact-us" target="_blank">Contact Us →</a>
+                </div>
+
+                <div class="footer-buttons col-span-4 m-col-star-9 m-col-end-13 l-col-star-10 l-col-end-13">
+                    <h3 class="hidden">Buttons</h3>
+                    <a class="footer-btn" href="#event-itinerary">EVENT DETAILS</a>
+                    <a class="footer-btn"
+                        href="https://www.google.com/maps/place/Fanshawe+London+Downtown+Campus+(137+Dundas)/@42.9833845,-81.2511139,19z/data=!4m6!3m5!1s0x882ef21b3ee98e51:0x243531a1cacd1219!8m2!3d42.9831841!4d-81.2506356!16s%2Fg%2F1q67gvv0m?entry=ttu"
+                        target="_blank">EVENT LOCATION</a>
+                    <a class="footer-btn" href="https://www.fanshawec.ca/why-fanshawe/tour-fanshawe"
+                        target="_blank">TOUR FANSHAWE</a>
+                </div>
+
+                <div class="footer-social col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="hidden">Social Media</h3>
+                    <a href="https://www.facebook.com/fanshawecollege" target="_blank"
+                        aria-label="Fanshawe on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fanshawecollege/" target="_blank"
+                        aria-label="Fanshawe on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/fanshawe-college/" target="_blank"
+                        aria-label="Fanshawe on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/fanshawecollege" target="_blank" aria-label="Fanshawe on Twitter"><i
+                            class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/MyFanshawe" target="_blank"
+                        aria-label="Fanshawe on YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="footer-copy col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="hidden">Copyright</h3>
+                    <p>Fanshawe College, IDP3 | Created by Team High Five © 2026 All Rights Reserved.</p>
+                </div>
+
+            </section>
+        </footer>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

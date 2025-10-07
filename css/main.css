@@ -365,13 +365,11 @@ margin: 0 0 10px 0;
   }
 }
 
-.eventimg {
-  background-color: #ED202D;
-  height: 200px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#event-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 .icon {
@@ -1391,8 +1389,12 @@ border-bottom: 1px solid white;
 /* ------------------
 Event details Tablet version 
 ---------------------------*/
-.event-itinerary {
-  margin-top: 170px;
+#event-itinerary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 65px;
 }
 .event{
   color: #ED202D;
@@ -1405,9 +1407,11 @@ Event details Tablet version
   margin-top: 4px;
 }
 
-.eventimg {
-  margin-top: 18px;
-  height: 240px;
+#event-image img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
 }
 
 .margin {
@@ -1676,6 +1680,14 @@ p#title-date {
   font-size: 16px;
   padding-bottom: 20px;
 }
+
+ /* ------------------
+   Event Details for desktop version 
+   -----------------------------------------*/
+   #event-itinerary{
+    gap: 90px;
+   }
+
 
    /* ------------------
    Invitation Section for desktop version 

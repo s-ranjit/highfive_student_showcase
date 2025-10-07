@@ -248,12 +248,28 @@ margin: 0 0 10px 0;
 /*-----------------
  Event Details section 
  ----------------------- */
+#event-itinerary h3 {
+  font-size: 40px;
+}
+
 #event-itinerary {
-    margin: 150px auto;
+    margin: 65px auto;
+    transform: translateY(600px);
+    animation: fadeUp 2s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .eventimg {
-  background-color: #B3272D;
+  background-color: #ED202D;
   height: 200px;
   color: #fff;
   display: flex;
@@ -263,15 +279,23 @@ margin: 0 0 10px 0;
 
 .icon {
   font-size: 24px;
-  color: #B3272D;
+  color: #ED202D;
   margin-top: 10px;
 }
 
 .event{
-  color: #B3272D;
+  color: #ED202D;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.event-heading {
+  color: #646469;
+}
+
+.itinerary {
+  padding-left: 40px;
 }
 
 .section-brk-line {
@@ -280,7 +304,7 @@ margin: 0 0 10px 0;
 }
 
 .time {
-  color: #B3272D;
+  color: #ED202D;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -293,9 +317,26 @@ margin: 0 0 10px 0;
 }
 
 .event-highlights {
-  color: #B3272D;
+  color: #ED202D;
   margin: 15px 0;
-  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.event-highlights::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #ED202D;
+  transition: width 0.4s ease;
+}
+
+.event-highlights:hover::after {
+  width: 100%;
 }
 
 p.event-location {
@@ -310,9 +351,22 @@ p.event-location {
 Invitation section
 ----------------------- */
 .invite {
-    background-color: #B3272D;
-    color: white;
-    text-align: center;
+      background-color: #ED202D;
+      color: white;
+      text-align: center;
+      transform: translateX(-150%);
+      animation: slideFromLeft 1s ease-out forwards;
+      animation-delay: 0.2s;
+      animation-timeline: view();     /* animation occurs when you scroll this section */
+      animation-range: entry 0% cover 50%;
+      opacity: 0;
+}
+
+@keyframes slideFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .invite-heading {
@@ -432,8 +486,25 @@ outline-offset: 0.125rem;
 /*---------------------
 Project section
 ---------  */
+#project-section h2 {
+  color: #ED202D;
+  font-size: 28px;
+  text-align: center;
+}
 #project-section {
 margin-top: 50px;
+transform: translateY(600px);
+    animation: fadeUp 2s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    opacity: 0;
+}
+@keyframes fadeup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 }
 
 .event-details {
@@ -444,24 +515,26 @@ margin-top: 50px;
   margin-bottom: 30px;
 }
 
-.icon i {
-  font-size: 30px; 
-  color: #B3272D;
-  margin-right: 10px;
+.icon,.icon-discover {
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+  margin-right: 20px;       
 }
 
-.icon {
-margin: 20px 0;
+.icon-discover {   
+  margin-right: 30px;  
 }
 
-.icon i.fa-lightbulb {
-font-size: 35px;
-margin-right: 20px;
+.icon img {
+  width: 60px;             
+  height: 60px;
+  object-fit: contain;    
 }
 
-.text-box {
-font-size: 14px;
-padding: 20px;
+.icon-discover img {
+  width: 50px;
+  height: 50px;
 }
 
 /*-----------------
@@ -1208,7 +1281,7 @@ Event details Tablet version
   margin-top: 170px;
 }
 .event{
-  color: #B3272D;
+  color: #ED202D;
   font-size: 30px;
   font-weight: 720;
 }
@@ -1239,15 +1312,10 @@ Event details Tablet version
 Invitation section Tablet Version 
 --------------------------------*/
 .invite {
-  background-color: #B3272D;
+  background-color: #ED202D;
   color: white;
   text-align: center;
   margin-top: 50px;
-}
-
-.heading {
-  margin-top: 50px;
-  font-size: 23px;
 }
 
 .invite p {

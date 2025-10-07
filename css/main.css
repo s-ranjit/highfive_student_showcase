@@ -21,7 +21,7 @@ body {
 }
 
 h2 { font-size: 36px;}
-h3 { font-size: 24px;}
+h3 { font-size: 28px;}
 h4 { font-size: 20px;}
 h5 { font-size: 18px;}
 
@@ -905,36 +905,35 @@ Introduction of IDP3
 ----------------------*/
 #program {
   margin: 150px auto;
-  background-color: #B3272D;
+  background-color: #ED202D;
   color: white;
 }
 
 .program-slideshow-container {
   width: 100%;
   overflow: hidden;
-  padding: 50px 0;
   position: relative;
 }
 
 #top-program-slideshow {
+  padding-top: 50px;
   display: flex;
-  gap: 20px;
-  animation: topSlideshow 30s linear infinite;
+  gap: 30px;
+  animation: topSlideshow 50s linear infinite;
+  margin-bottom: 30px;
 }
 
 #bottom-program-slideshow {
+  padding-bottom: 50px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: end;
   align-items: end;
-  animation: bottomSlideshow 30s linear infinite;
+  animation: bottomSlideshow 50s linear infinite;
 }
 
-.top-slideshow-img, .bottom-slideshow-img {
-  height: 150px;
-  width: 200px;
-  background-color: white;
-  border: 2px solid #646469;
+.top-slideshow-img img, .bottom-slideshow-img img {
+  border: 10px solid #fff;
   flex-shrink: 0;
 }
 
@@ -961,31 +960,37 @@ Introduction of IDP3
 }
 #about-idp3 {
   text-align: center;
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
 }
 
 #about-idp3 h3 {
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 #about-idp3 p {
-  margin: 20px auto;
+  margin: 10px auto;
+}
+
+#about-idp3 p:last-child {
+  margin: 0 auto;
 }
 
 #about-idp3 a {
-  color: #B3272D;
-  background-color: white;
-  border: 2px solid #646469;
+  color: #ED202D;
+  background-color: #fff;
+  border: 2px solid #fff;
+  font-weight: 500;
   border-radius: 30px;
   padding: 10px 20px;
   width: 200px;
-  margin: 10px auto;
+  margin: 20px auto 10px auto;
   transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
 }
 
 #about-idp3 a:hover {
   color: white;
-  background-color: #B3272D;
+  background-color: #ED202D;
   border: 2px solid white;
   transform: scale(1.05); 
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
@@ -1493,14 +1498,17 @@ Invitation section Tablet Version
 
 
 
-    /* ------------------
-Introduction of IDP3 
-----------------------*/
-
-  .top-slideshow-img, .bottom-slideshow-img {
+/*------------------
+IDP3
+---------------------*/
+.top-slideshow-img img, .bottom-slideshow-img img {
   height: 200px;
-  width: 250px;
-  }
+  width: 280px;
+}
+
+/*-------------
+project exhibition
+---------------------*/
 
 .slider-heading {
   position: relative;
@@ -1716,6 +1724,15 @@ p#title-date {
 #full-screen {
   margin-left: 300px;
 }
+
+/*------------------
+IDP3
+---------------------*/
+.top-slideshow-img img, .bottom-slideshow-img img {
+  height: 250px;
+  width: 350px;
+}
+
 
 /* ---------------
 highfive portfolio showcase 

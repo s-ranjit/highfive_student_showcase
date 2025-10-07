@@ -24,6 +24,16 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+/* header navigation close */
+const hamburger = document.querySelector('#hamburger');
+const navLinks = document.querySelectorAll('#header-nav nav ul li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.checked = false;
+  });
+})
+
 /*video*/
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");

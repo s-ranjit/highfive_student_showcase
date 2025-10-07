@@ -1,31 +1,28 @@
-/*scroll animation*/
-const hero = document.querySelector('#hero-container');
+/* countdown */
+const days = document.querySelector("#days");
+const hours = document.querySelector("#hours");
+const minutes = document.querySelector("#minutes");
+const seconds = document.querySelector("#seconds");
 
-window.addEventListener("scroll",() => {
-  let scrollY = window.scrollY;
-  let scale = Math.max(0.2, 1 - scrollY / 300);
+const eventTime = new Date(`2026-04-23T16:30:00-04:00`);
 
-  hero.style.transform = `scale(${scale})`;
-});
+function updateCountdown() {
+  const currentTime = new Date();
+  const diff = eventTime - currentTime;
 
-/* hero section slideshow */
-const heroSlides = document.querySelectorAll(".hero-slide");
-let slideIndex = 0;
+  const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+  const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+  const m = Math.floor(diff / 1000 / 60) % 60;
+  const s = Math.floor(diff / 1000) % 60;
 
-function heroSlideshow () {
-  let i;
-  for (i = 0; i < heroSlides.length; i++) {
-    heroSlides[i].style.display = "none";
-  }
-  slideIndex ++;
-  if (slideIndex > heroSlides.length - 1) {
-    slideIndex = 0;
-  }
-  heroSlides[slideIndex].style.display = "block";
-  setTimeout(heroSlideshow, 3000);
+  days.innerHTML = d;
+  hours.innerHTML = h < 10 ? '0' + h : h;
+  minutes.innerHTML = m < 10 ? '0' + m : m;
+  seconds.innerHTML = s < 10 ? '0' + s : s;
+
 }
-
-heroSlideshow();
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
 /*video*/
 const playerCon = document.querySelector("#player-container");

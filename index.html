@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -43,46 +46,56 @@
 
     <main>
         <section id="hero" class="grid-con">
-            <h2 class="hidden">hero</h2>
-            <div id="hero-container" class="col-span-full m-col-start-2 m-col-end-11 l-col-start-2 l-col-end-11">
-
-                <div id="hero-img-slideshow">
-                    <div class="hero-slide fade">
-                        <img src="images/mob-hero1.jpg" srcset="images/tab-hero1.jpg 768w,
-                        images/desk-hero1.jpg 1200w" sizes="100vw" alt="hero image 1">
-                    </div>
-
-                    <div class="hero-slide fade">
-                        <img src="images/mob-hero2.jpg" srcset="images/tab-hero2.jpg 768w,
-                        images/desk-hero2.jpg 1200w" sizes="100vw" alt="hero image 2">
-                    </div>
-
-                    <div class="hero-slide fade">
-                        <img src="images/mob-hero3.jpg" srcset="images/tab-hero3.jpg 768w,
-                        images/desk-hero3.jpg 1200w" sizes="100vw" alt="hero image 3">
-                    </div>
-
-                    <div class="hero-slide fade">
-                        <img src="images/mob-hero4.jpg" srcset="images/tab-hero4.jpg 768w,
-                        images/desk-hero4.jpg 1200w" sizes="100vw" alt="hero image 4">
-                    </div>
-
-                    <div class="hero-slide fade">
-                        <img src="images/mob-hero5.jpg" srcset="images/tab-hero5.jpg 768w,
-                        images/desk-hero5.jpg 1200w" sizes="100vw" alt="hero image 5">
-                    </div>
-
-                    <div class="hero-slide fade">
-                        <img src="images/mob-hero6.jpg" srcset="images/tab-hero6.jpg 768w,
-                        images/desk-hero6.jpg 1200w" sizes="100vw" alt="hero image 6">
-                    </div>
-                </div>
-
-                <div id="hero-letter" class="m-col-start-5 m-col-end-13 l-col-start-7 l-col-end-13">
-                    <img src="images/mob-hero-letter.png" srcset="images/tab-hero-letter.png 768w,
-                        images/desk-hero-letter.png 1200w" sizes="100vw" alt="masked letter for hero">
-                </div>
+            <h2 class="hidden">hero section</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <div id="hero-title" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <p>talent showcase</p>
+                <h3>Industry night</h3>
+                <h3>2026</h3>
             </div>
+
+            <p id="title-date" class="col-span-2 m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">April 23rd 2026</p>
+
+                <div id="mob-hero-img" class="col-span-full">
+                    <img src="images/mob-hero.webp" alt="hero image of mobile">
+                </div>
+
+                <div id="countdown" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+                <div class="countdown-time">
+                    <h3 id="days"></h3>
+                    <small>Day</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="hours"></h3>
+                    <small>Hours</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="minutes"></h3>
+                    <small>Minutes</small>
+                </div>
+                <span class="colon">:</span>
+                <div class="countdown-time">
+                    <h3 id="seconds"></h3>
+                    <small>Seconds</small>
+                </div>
+               </div>
+
+               <div id="title-btn" class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7">
+               <a herf="#event-itinerary" id="title-schedule-btn">Schedule</a>
+               <a herf="#envelope" id="title-learnmore-btn">Learn more</a>
+               </div>
+
+               </div>
+
+               <div id="tab-desk-hero-img" class="m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
+                    <img src="images/tab-hero.webp"
+                    srcset="images/tab-hero.webp 768w,
+                    images/desk-hero.webp 1200w"
+                    alt="industry night hero">
+                </div>
+
         </section>
 
         <section class="invitation-card grid-con">

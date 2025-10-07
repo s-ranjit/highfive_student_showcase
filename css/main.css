@@ -131,31 +131,124 @@ hero
 --------------------------*/
 #hero {
 margin-top: 150px;
+margin-bottom: 100px;
 }
 
-#hero-container {
-  height: 350px;
-  margin: 0 auto;
-  position: relative;
+#hero-title {
+  text-transform: uppercase;
+}
+
+#hero-title p {
+  color: #646469;
+  margin: 0;
+  font-weight: 500;
+}
+
+#hero-title h3 {
+  color: #ED202D;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+#hero-title h3:last-child {
+  color: #646469;
+}
+
+#title-date {
+  color: #646469;
+  font-weight: 700;
+}
+
+#mob-hero-img {
   overflow: hidden;
+  border-radius: 20px;
 }
 
-#hero-letter {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  left: 0;
+#tab-desk-hero-img {
+  display: none;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+#title-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes fade {
-  from { opacity: .4;}
-  to { opacity: 1;}
+#title-schedule-btn, #title-learnmore-btn {
+  margin: auto 20px;
 }
+
+#title-schedule-btn {
+  color: #646469;
+  background-color: #fff;
+  border: 2px solid #646469;
+  width: 200px;
+  height: 45px;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 500;
+  transform: scale(1);
+  transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
+}
+
+#title-schedule-btn:hover {
+  color: #fff;
+  background-color: #646469;
+  transform: scale(1.05); 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
+}
+
+#title-learnmore-btn {
+  color: #fff;
+  background-color: #ED202D;
+  border: 2px solid #ED202D;
+  width: 200px;
+  height: 45px;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 500;
+  transform: scale(1);
+  transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
+}
+
+#title-learnmore-btn:hover {
+  color: #ED202D;
+  background-color: #fff;
+  transform: scale(1.05); 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); 
+}
+
+ #countdown {
+  display: flex;
+  margin: 0 auto 30px auto;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .colon {
+  margin-top: -10px;
+  font-weight: 800;
+  color: #646469;
+ }
+
+  #countdown h3 {
+    font-size: 36px;
+    margin: 5px;
+    color: #ED202D;
+  }
+
+.countdown-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
 
 /*----------------
 invitation card
@@ -1225,8 +1318,73 @@ header navigation
 /* ----------------
 hero
 -----------------*/
-#hero-container {
-  height: 550px;
+
+#tab-desk-hero-img {
+  display: block;
+}
+
+#mob-hero-img {
+  display: none;
+}
+
+#tab-desk-hero-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+#hero-title {
+  margin-top: 30px;
+}
+
+#hero-title h3 {
+  font-size: 54px;
+}
+
+ #countdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0;
+ }
+
+ .colon {
+  margin-top: 25px;
+  font-weight: 800;
+  color: #646469;
+ }
+
+  #countdown h3 {
+    font-size: 30px;
+    margin: 5px;
+    color: #ED202D;
+  }
+
+.countdown-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.countdown-time:first-child {
+  margin-left: 0;
+}
+
+#title-btn {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#title-schedule-btn, #title-learnmore-btn {
+  margin: auto 10px auto 0;
+}
+
+#title-learnmore-btn {
+  padding: 10px 5px;
 }
 
 /*_--------------
@@ -1443,12 +1601,40 @@ header navigation
       gap: 50px;
   }
 
-    /* ----------------
+ /* ----------------
 hero
 -----------------*/
-#hero-container {
-  height: 650px;
+#tab-desk-hero-img {
+  margin-top: 30px;
 }
+
+#hero-title {
+  margin-top: 100px;
+}
+
+#hero-title h3 {
+  font-size: 65px;
+}
+
+p#title-date {
+  font-size: 20px;
+}
+
+ #countdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0;
+ }
+
+ .colon {
+  margin-top: 35px;
+ }
+
+  #countdown h3 {
+    font-size: 40px;
+    margin:10px;
+  }
 
   /*-------------
   invitation card

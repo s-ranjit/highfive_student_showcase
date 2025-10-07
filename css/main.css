@@ -248,6 +248,10 @@ margin: 0 0 10px 0;
 /*-----------------
  Event Details section 
  ----------------------- */
+#event-itinerary h3 {
+  font-size: 40px;
+}
+
 #event-itinerary {
     margin: 65px auto;
     transform: translateY(600px);
@@ -286,8 +290,12 @@ margin: 0 0 10px 0;
   text-transform: uppercase;
 }
 
-.event span {
+.event-heading {
   color: #646469;
+}
+
+.itinerary {
+  padding-left: 40px;
 }
 
 .section-brk-line {

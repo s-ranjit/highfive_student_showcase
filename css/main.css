@@ -352,19 +352,8 @@ margin: 0 0 10px 0;
 
 #event-itinerary {
     margin: 65px auto;
-    transform: translateY(600px);
-    animation: fadeUp 2s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    opacity: 0;
 }
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 #event-image img {
   display: block;
   width: 100%;

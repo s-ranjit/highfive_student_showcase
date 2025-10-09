@@ -449,21 +449,11 @@ Invitation section
       background-color: #ED202D;
       color: white;
       text-align: center;
-      transform: translateX(-150%);
-      animation: slideFromLeft 1s ease-out forwards;
-      animation-delay: 0.2s;
-      animation-timeline: view();     /* animation occurs when you scroll this section */
-      animation-range: entry 0% cover 50%;
-      opacity: 0;
+      cursor: pointer;
 }
-
-@keyframes slideFromLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.invite:hover {
+  transform: scale(1.01);
 }
-
 .invite-heading {
     margin-top: 50px;
 }

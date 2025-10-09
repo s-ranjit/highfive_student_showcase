@@ -1001,9 +1001,10 @@ Introduction of IDP3
 highfive portfolio showcase 
 -----------------------------*/
 #highfive-portfolio h3 {
-  color: #B3272D;
+  color: #ED202D;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #highfive-portfolio p {
@@ -1014,8 +1015,16 @@ highfive portfolio showcase
 .highfive-portfolio-box {
   display: flex;
   position: relative;
+  margin: 20px;
   gap: 0;
+  text-shadow: none;
+  transition: transform 0.25s ease;
 }
+
+.highfive-portfolio-box:hover {
+  transform: scale(1.05); 
+}
+
 
 .highfive-portfolio-card {
   position: relative;
@@ -1023,22 +1032,22 @@ highfive portfolio showcase
   display: grid;
   grid-template-columns: 1fr;
   gap: 100px;
+  transform: scale(1);
 }
 
 
-.highfive-portfolio-img {
-  width: 180px;
-  height: 180px;
-  background-color: white;
-  border: 2px solid #646469;
+.highfive-portfolio-img img {
+  border: 4px solid #fff;
+  border-radius: 5px;
   position: absolute;
-  top: -55px;
+  top: -70px;
   left: 35px;
   z-index: 99;
 }
 
 .highfive-portfolio-info {
-  background-color: #B3272D;
+  background-color: #ED202D;
+  border-radius: 10px;
   width: 250px;
   height: 250px;
   position: relative;
@@ -1047,12 +1056,12 @@ highfive portfolio showcase
 }
 
 .highfive-portfolio-info h4 {
-  padding-top: 140px;
+  padding-top: 130px;
   margin: 0;
 }
 
 .highfive-portfolio-info p {
-  margin-top: 3px;
+  margin-top: 5px;
   font-size: 0.8em;
   padding: 0;
 }
@@ -1065,15 +1074,16 @@ highfive portfolio showcase
 .fanshawe-medal {
   position: absolute;
   z-index: 999;
-  top: -70px;
-  left: 10px;
+  top: -120px;
+  left: -100px;
 }
 
 .fanshawe-medal img {
-  height: 70px;
+  height: 160px;
   width: auto;
   display: block;
 }
+
 
 /* -------------------
 student portfolio showcase 
@@ -1083,9 +1093,10 @@ student portfolio showcase
 }
 
 #student-portfolio h3 {
-  color: #B3272D;
+  color: #ED202D;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #student-portfolio p.center {
@@ -1097,7 +1108,15 @@ student portfolio showcase
   position: relative;
   display: flex;
   gap: 0;
+  transform: scale(1);
+  transition: transform 0.25s ease, text-shadow 0.25s ease, color 0.25s ease;
 }
+
+.student-portfolio-box:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
 
 .student-portfolio-card {
   position: relative;
@@ -1113,25 +1132,31 @@ student portfolio showcase
   height: 90px;
   background-color: #646469;
   position: absolute;
-  top: 13px;
+  top: 23px;
   left: 40px;
   z-index: 100;
 }
 
 .student-portfolio-info {
-  border: 2px solid #646469;
+  color: black;
+  border: 2px solid #ED202D;
+  border-radius: 10px;
   padding: 15px 20px 10px 60px;
   margin-left: 90px;
   width: 300px;
   position: relative;
+  transition: color 0.25s ease;
 }
 
 .student-portfolio-box p.student-name {
+  color: #ED202D;
   padding: 0;
   margin: 0;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 0.25s ease;
 }
+
 
 .student-portfolio-box p {
   margin-top: 3px;
@@ -1141,6 +1166,23 @@ student portfolio showcase
 .student-portfolio-box p.quato {
   font-style: italic;
   font-size: 0.8em;
+}
+
+.student-portfolio-info:hover {
+  background-color: #ED202D;
+}
+
+.student-portfolio-box:hover .student-portfolio-info p {
+  color: #fff; 
+}
+
+.student-portfolio-box:hover .student-portfolio-info,
+.student-portfolio-img:hover ~ .student-portfolio-info {
+  background-color: #ED202D;
+}
+
+.student-portfolio-img:hover .student-portfolio-info p {
+  color: #fff; 
 }
 
 /* ------------------

@@ -239,10 +239,11 @@ margin-bottom: 100px;
   color: #646469;
  }
 
-  #countdown h3 {
-    font-size: 36px;
+  #countdown p {
+    font-size: 30px;
     margin: 5px;
     color: #ED202D;
+    font-weight: 700;
   }
 
 .countdown-time {
@@ -580,10 +581,10 @@ outline-offset: 0.125rem;
 /*---------------------
 Project section
 ---------  */
-#project-section h2 {
+#project-section h3 {
   color: #ED202D;
-  font-size: 28px;
   text-align: center;
+  text-transform: uppercase;
 }
 #project-section {
 margin-top: 50px;
@@ -733,6 +734,7 @@ transform: scale(1.05);
 
 .teachers-section h3 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -872,7 +874,7 @@ hr.separator {
   letter-spacing: 1px;
 }
 
-.teacher-info h3 {
+.teacher-info h4 {
   color: #d32f2f;
   margin: 0 0 10px 0;
   font-size: 28px;

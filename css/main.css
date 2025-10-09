@@ -485,18 +485,6 @@ Project section
 }
 #project-section {
 margin-top: 50px;
-transform: translateY(600px);
-    animation: fadeUp 2s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    opacity: 0;
-}
-@keyframes fadeup {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
 }
 
 .event-details {
@@ -522,11 +510,16 @@ transform: translateY(600px);
   width: 60px;             
   height: 60px;
   object-fit: contain;    
+  cursor: pointer;
 }
 
 .icon-discover img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
+}
+.icon img:hover, .icon-discover img:hover {
+  transform: scale(1.1);
 }
 
 /*-----------------
@@ -1320,16 +1313,6 @@ Invitation section Tablet Version
   margin-bottom: 50px;
   line-height: 1.2;
 } 
-
-/*------------------
- Project section Tablet Version 
- ------------------------*/
-.text-box {
-  font-size: 16px;
-  padding: 20px;
-  margin-top: 40px; 
-}
-
 
 
     /* ------------------

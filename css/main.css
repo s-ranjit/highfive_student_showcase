@@ -143,6 +143,7 @@ margin-bottom: 100px;
 
 #hero-title p {
   color: #646469;
+  font-size: 15px;
   margin: 0;
   font-weight: 500;
 }
@@ -1361,7 +1362,7 @@ hero
 }
 
 #hero-title h3 {
-  font-size: 54px;
+  font-size: 61px;
 }
 
  #countdown {
@@ -1377,7 +1378,7 @@ hero
   color: #646469;
  }
 
-  #countdown h3 {
+  #countdown p {
     font-size: 30px;
     margin: 5px;
     color: #ED202D;
@@ -1677,7 +1678,7 @@ p#title-date {
   margin-top: 35px;
  }
 
-  #countdown h3 {
+  #countdown p {
     font-size: 40px;
     margin:10px;
   }

@@ -93,9 +93,7 @@ player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
 volumeSlider.addEventListener("input", changeVolume); 
 
-/* ================================
-   SWIPER SLIDER
-   ================================ */
+/* swiper sliders */
    const SLIDES_PER_GROUP = 3;
 
    const GROUPS = [
@@ -134,9 +132,7 @@ volumeSlider.addEventListener("input", changeVolume);
      }
    });
    
-   /* ================================
-      GROUP CAPTION
-      ================================ */
+/* group caption */
    const captionTitle = document.querySelector('.group-caption__title');
    const captionNames = document.querySelector('.group-caption__names');
    
@@ -159,9 +155,7 @@ volumeSlider.addEventListener("input", changeVolume);
    updateCaption();
    swiper.on('slideChange', updateCaption);
    
-   /* ================================
-      BUTTONS
-      ================================ */
+/* functional buttons */
    const prevBtn = document.querySelector('.button-container .red-btn:first-child');
    const nextBtn = document.querySelector('.button-container .red-btn:last-child');
    

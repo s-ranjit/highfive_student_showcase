@@ -3,14 +3,14 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #9a2220;
+        fill: #ed202d;
       }
 
       .cls-2 {
-        fill: #b3212c;
+        fill: #b3272d;
       }
     </style>
   </defs>
-  <rect class="cls-1" y=".13" width="1200" height="653.69"/>
-  <polygon class="cls-2" points="600 144.55 1200 0 0 0 600 144.55"/>
+  <rect class="cls-2" y=".13" width="1200" height="653.69"/>
+  <polygon class="cls-1" points="600 181 1200 0 0 0 600 181"/>
 </svg>

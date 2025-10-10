@@ -181,7 +181,7 @@ margin-bottom: 100px;
 }
 
 #title-schedule-btn, #title-learnmore-btn {
-  margin: auto 20px;
+  margin: auto 10px;
 }
 
 #title-schedule-btn {
@@ -259,14 +259,15 @@ margin-bottom: 100px;
 invitation card
 -------------------*/
 .envelope {
-background: url(../images/envelope-mobile.svg);
-background-repeat: no-repeat;
-background-position: center;
-text-align: center;
-position: relative;
-padding: 100px 50px 40px 50px;
-color: #fff; 
-}    
+  background: url(../images/envelope-mobile.svg) no-repeat center;
+  background-size: cover; 
+  text-align: center;
+  position: relative;
+  padding: 80px 50px 40px 50px;
+  color: #fff; 
+  width: 100%;
+  height: 100%;
+}
 
 .text {
     margin-top: 50px;
@@ -310,35 +311,7 @@ margin-bottom: 0;
 
 .location p:last-child {
 margin: 5px auto;
-padding: 0 60px;
-}
-
-.countdown h3 {
-margin-top: 30px;
-}
-
-.countdown p:first-child {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 30px;
-}
-
-.countdown p:last-child {
-margin-top: 10px;
-}
-
-#countdown-time {
-display: flex;
-gap: 15px;
-align-items: center;
-justify-content: center;
-border-bottom: 1px solid white;
-}
-
-#countdown-time p {
-font-weight: lighter;
-font-size: 14px;
-margin: 0 0 10px 0;
+padding: 0;
 }
 
 
@@ -346,6 +319,10 @@ margin: 0 0 10px 0;
 /*-----------------
  Event Details section 
  ----------------------- */
+#event-img {
+  overflow: hidden;
+}
+
 #event-itinerary h3 {
   font-size: 40px;
 }
@@ -354,12 +331,6 @@ margin: 0 0 10px 0;
     margin: 65px auto;
 }
 
-#event-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
 
 .icon {
   font-size: 24px;
@@ -406,6 +377,7 @@ margin: 0 0 10px 0;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .event-highlights::after {
@@ -1415,8 +1387,9 @@ invitation card
 
 
 .envelope {
-  background: url(../images/envelope-tablet.svg) no-repeat;
-  padding: 120px 90px 40px;
+  background: url(../images/envelope.svg) no-repeat;
+  background-size: contain;
+  padding: 100px 90px 90px 90px;
   background-position: center;
   text-align: center;
   position: relative;
@@ -1427,21 +1400,37 @@ invitation card
   color: #fff;
   margin: 0;
 }
+
+.text {
+    margin-top: 50px;
+}
+
+.envelope h3 {
+font-size: 30px;
+}
+
+.date p.bold-20 {
+  font-size: 24px;
+    font-weight: 600;
+}
      
 .date {
   display: flex;
   justify-content: center;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .date span {
   margin: 10px;
 }
 
-.location:first-child {
-  font-size: 20px;
-  margin: 30px;
+.location p:first-child {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom:0px;
   line-height: 2.0;
+  font-weight: 600;
 }
 
 /* ------------------
@@ -1461,7 +1450,6 @@ Event details Tablet version
 }
 
 .event-description {
-  font-size: 18px;
   margin-top: 4px;
 }
 
@@ -1499,6 +1487,11 @@ Invitation section Tablet Version
   margin-bottom: 50px;
   line-height: 1.2;
 } 
+
+#event-itinerary {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 
 
 /*------------------
@@ -1682,17 +1675,17 @@ p#title-date {
     font-size: 40px;
     margin:10px;
   }
-
-  /*-------------
+/*-------------
   invitation card
   -------------------*/
 
   .envelope {
-  background: url(../images/envelope-desktop.svg);
+  background: url(../images/envelope.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 180px 90px 40px 90px;
+  padding: 180px 90px 0px 90px;
   background-size: contain;
+  margin-top: 100px;
 }
 
 .envelope h3 {

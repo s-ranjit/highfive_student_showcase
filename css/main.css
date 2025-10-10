@@ -1139,7 +1139,7 @@ student portfolio showcase
   background-color: #646469;
   position: absolute;
   top: 23px;
-  left: 40px;
+  left: 0px;
   z-index: 100;
   border-radius: 10%;
   overflow: hidden;
@@ -1150,7 +1150,7 @@ student portfolio showcase
   border: 2px solid #ED202D;
   border-radius: 10px;
   padding: 15px 20px 10px 60px;
-  margin-left: 90px;
+  margin-left: 60px;
   width: 300px;
   position: relative;
   transition: color 0.25s ease;

@@ -407,54 +407,56 @@ p.event-location {
 Invitation section
 ----------------------- */
 .invite {
-      background-color: #ED202D;
-      color: white;
-      text-align: center;
-      cursor: pointer;
-}
-.invite:hover {
-  transform: scale(1.01);
-}
-.invite-heading {
-    margin-top: 50px;
+  background-color: #ED202D;
+  color: white;
+  text-align: center;
+  height: 550px;
+
 }
 
-p.second-heading {
-  font-size: 20px;
-  font-weight: bold;
- }
-  
+.invite-heading {
+margin-top: 60px;
+font-size: 30px;
+}
+
+.second-heading i {
+font-size: 20px;
+font-weight: bold;
+}
+
 .invite p {
-    margin-bottom: 70px;
+margin-bottom: 30px;
+font-size: 15px;
+
 }
 
 /*----------------------
 video start 
 -----------------------------*/
 #player-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+position: relative;
+display: flex;
+flex-direction: column;
+margin-top: 70px;
 }
 .video-controls.hidden {
 display: none;
 }
 
 .video-controls {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  background-image: linear-gradient(to bottom,rgba(218, 21, 21, 0.582), rgba(255, 0, 13, 0.3)
-);
-  display: flex;
+position: absolute;
+right: 0;
+left: 0;
+bottom: -68.9px;
+padding: 20px;
+background-color: #ED202D;
+display: flex;
 }
 
 button {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
+padding: 0;
+border: 0;
+background-color: transparent;
 }
 
 #play-button,
@@ -465,9 +467,9 @@ color: #ffffff;
 margin-left: 10px;
 }
 .fa-volume-high {
-  margin-left: 10px;
-  color: #fff;
-  font-size: 25px;
+margin-left: 10px;
+color: #fff;
+font-size: 25px;
 }
 input[type="range"] {
 -webkit-appearance: none;
@@ -485,7 +487,7 @@ outline: none;
 /******** Chrome, Safari, Opera and Edge Chromium styles ********/
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-background-color: #B3272D;
+background-color: #fff;
 border-radius: 0.5rem;
 height: 0.5rem;
 }
@@ -495,28 +497,28 @@ input[type="range"]::-webkit-slider-thumb {
 -webkit-appearance: none; /* Override default look */
 appearance: none;
 margin-top: -4px; /* Centers thumb on the track */
-background-color: #d2464d;
+background-color: #fff;
 border-radius: 0.5rem;
 height: 1rem;
 width: 1rem;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-outline: 3px solid #d2464d;
+outline: 3px solid #fff;
 outline-offset: 0.125rem;
 }
 
 /*********** Firefox styles ***********/
 /* slider track */
 input[type="range"]::-moz-range-track {
-background-color: #d2464d;
+background-color: #fff;
 border-radius: 0.5rem;
 height: 0.5rem;
 }
 
 /* slider thumb */
 input[type="range"]::-moz-range-thumb {
-background-color: #d2464d;
+background-color:#fff;
 border: none; /*Removes extra border that FF applies*/
 border-radius: 0.5rem;
 height: 1rem;
@@ -524,9 +526,10 @@ width: 1rem;
 }
 
 input[type="range"]:focus::-moz-range-thumb{
-outline: 3px solid #d2464d;
+outline: 3px solid #fff;
 outline-offset: 0.125rem;
 }
+
 
   
 /*---------------------

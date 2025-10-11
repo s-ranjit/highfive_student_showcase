@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342.16 406.09">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 500 494.5">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
   <defs>
     <style>
-      .cls-1 {
+      .st0, .st1 {
         fill: #ed202d;
       }
 
-      .cls-2 {
-        fill: #b3272d;
+      .st1 {
+        filter: url(#drop-shadow-1);
       }
     </style>
+    <filter id="drop-shadow-1" x="-13.1" y="-6.9" width="531" height="138" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.8" dy="8.5"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
   </defs>
-  <rect class="cls-2" y=".06" width="342.16" height="406.03"/>
-  <polygon class="cls-1" points="171.07 107.21 342.16 0 0 0 171.07 107.21"/>
+  <rect class="st0" y="0" width="500" height="494.5"/>
+  <polygon class="st1" points="250 107.2 500 0 0 0 250 107.2"/>
 </svg>

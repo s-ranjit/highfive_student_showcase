@@ -51,7 +51,6 @@ This is a collaborative project across multiple courses (Multimedia Authoring, W
 - **GitHub** – Repo setup, branching/merging, README documentation, workflow best practices 
 - **Figma** – Wireframing, and collaborative UI/UX design 
 - **Adobe Suites (Illustrator, After Effects, Premiere Pro)** – Branding assets, SVG logos, video editing 
-- **Cinema 4D (C4D)** – 3D modeling and rendering for promotional video elements 
 - **Trello** – Task assignment, sprint planning, and project management 
 
 ---
@@ -60,11 +59,11 @@ This is a collaborative project across multiple courses (Multimedia Authoring, W
 ## 🌟 Key Features 
 - **Hero Video Header** – Background video with text overlay introduces the Industry Night 2026 event in an engaging way. 
 - **Mobile Hamburger Menu** – Animated navigation menu designed for mobile versions with smooth open/close transitions. 
-- **Invitation Section** – Event invitation card in envelope with clear date, time, and location details, with a countdown timer. 
+- **Invitation Section** – Event invitation card in envelope with clear date, time, and location details. 
 - **Event Information & Itinerary** – Presents event purpose, schedule, activities, and networking opportunities. 
 - **Invitation, Video & Client Project** – Inspiring event intro with promo video and highlight of the Level 4 client project (RCAF Association – Local 427 Wing). 
 - **3D Carousel Slider** – Interactive slider with navigation buttons for browsing student projects dynamically. 
-- **Animated Faculty Showcase** – Circular motion animation featuring professors’ portraits with their names and quotes. 
+- **Animated Faculty Showcase** – Circular motion animation featuring professor’s portraits with their names and quotes. 
 - **IDP3 Program Showcase** – Slideshow-style section introducing the Interactive Media Design diploma, featuring visuals and text about the program with a direct link to the official Fanshawe IDP3 page. 
 - **Team Spotlight & Student Portfolios** – Dedicated “Behind this website” section highlighting the 5 members of High Five if the site wins the Hackathon, followed by a dynamic directory of all Interactive Media Design students with their portfolios. 
 - **Footer with Branding & Navigation** – Contains Fanshawe branding, address, quick links, event buttons, social media icons, and project credits (Team High Five, 2026). 
@@ -117,17 +116,6 @@ This is a collaborative project across multiple courses (Multimedia Authoring, W
 - Pull requests & review before merging to main 
 
 ---
-
-
-## 👌 Future Improvements 
-- Integrate images and detailed info for student portfolios. 
-- Add smoother, animated transitions for testimonial cards. 
-- Deploy the site on **GitHub Pages** for public access. 
-- Extend the promotional video to 10–15 seconds for more impact. 
-- Enhance the countdown timer with a styled “envelope” display for greater visual appeal. 
-
----
-
 
 ## 🎯 Learning Outcomes 
 - Practice semantic, mobile-first HTML and CSS Grid for responsive layouts. 

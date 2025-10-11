@@ -93,9 +93,13 @@
 
                <div id="tab-desk-hero-img" class="m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
                     <img src="images/tab-hero-img.jpg"
-                    srcset="images/tab-hero-img.jpg 768w,
+                    srcset="
+                    images/tab-hero-img.jpg 768w,
                     images/desk-hero-img.jpg 1200w"
-                    alt="hero test">
+                    sizes="(min-width: 1200px) 1200px,
+                    (min-width: 768px) 768px, 
+                    100vw"
+                    alt="desktop, tablet hero image">
                 </div>
 
         </section>
@@ -198,7 +202,7 @@
         <div class="grid-con">
             <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
 
-                <h2 class="hidden">Industry Night Intro Reel</h2>
+                <h2 class="hidden">Industry Night promotion video</h2>
 
                 <video controls preload="metadata" poster="images/video_thumbnail.jpg">
                     <source src="video/Industry_Night_Video.webm" type="video/webm">
@@ -225,8 +229,7 @@
         </div>
 
         <section id="project-section" class="grid-con">
-            <h2 class="hidden">Industry night project details</h2>
-            <h3 class="col-span-full">Project Details:</h3>
+            <h3 class="col-span-full l-col-start-2 l-col-end-12">Project Details: Royal Canadian Air Force Association (Local 427 Wing)</h3>
             <div class="event-details col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
                 <div class="icon">
                     <img src="images/users.svg" alt="user icon">
@@ -261,7 +264,6 @@
         </section>
 
         <section class="grid-con" id="project-exhibition">
-            <h2 class="hidden">Project Exhibition</h2>
 
             <div class="slider-heading col-span-4 m-col-span-12 l-col-span-12">
                 <h3>Student project exhibit</h3>

@@ -539,6 +539,7 @@ Project section
   color: #ED202D;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 150px;
 }
 #project-section {
 margin-top: 50px;
@@ -1392,7 +1393,7 @@ invitation card
 .envelope {
   background: url(../images/envelope.svg) no-repeat;
   background-size: contain;
-  padding: 100px 90px 90px 90px;
+  padding: 150px 90px 90px 90px;
   background-position: center;
   text-align: center;
   position: relative;
@@ -1686,7 +1687,7 @@ p#title-date {
   background: url(../images/envelope.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 180px 90px 0px 90px;
+  padding: 230px 90px 0px 90px;
   background-size: contain;
   margin-top: 100px;
 }
